@@ -1,11 +1,10 @@
 /* BACKGROUND */
 .background { 
-    /* Change this image to be the one you want... */
     background-color: rgba(30, 144, 255, 0.7);
-
 }
 
 .overlay {
+    /* Change this image to be the one you want... */
     background-image: url('../images/template_background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -18,12 +17,10 @@ html {
 
 /* FONTS */
 h1, h2, h3, h4, h5 {
-    /* These will probably change */
     font-family: 'Overpass', monospace;
 }
 
 p {
-    /* These will probably change */
     font-family: 'Fira Sans', sans-serif;
 }
 
@@ -42,17 +39,12 @@ p {font-size: 100%;}
     color: white;
 }
 
-.block1 {
-    background-color: rgba(0, 0, 0, 0.8)
-}
-
-.block2 {
-    background-color: rgba(14, 14, 14, 0.8);
-}
+.block1 {background-color: rgba(0, 0, 0, 0.8)}
+.block2 {background-color: rgba(14, 14, 14, 0.8);}
 
 /* LINK FORMATTING */
 a:visited, a:link {
-    color: #56beff;                                   /*ACCENT COLOUR HERE*/
+    color: #56beff;                                  /*ACCENT COLOUR HERE*/
 }
 
 a:hover {
@@ -71,7 +63,8 @@ a:hover {
 
 /* NAVBAR */
 .navbar {
-    background-color:black !important;
+    background-color:rgb(4, 0, 27) !important;
+    padding-bottom: 1%
 }
 
 .active {
@@ -85,6 +78,48 @@ a:hover {
     text-align: center;
 }
 
+/* FOOTER */
+#socialicons, #navigation-div {
+    width: 100%;
+    padding: 1%;
+}
+
+#socialicons {
+    height: 5em !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#mini-contact {
+    padding-top: 1%;
+    margin-top: 0px;
+}
+
+.footer h4 {
+    color: #4292c4;                                  /*ACCENT COLOUR HERE (SLIGHTLY DARKER)*/
+}
+
+/* ICONS */
+#social-icons {
+    text-align: center;
+}
+
+.icon-div {
+    /* background-color: rgb(0, 0, 0); */
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+i {
+    margin-right: 1%;
+    padding-bottom: 0.2%;
+}
+
+i:hover {
+    border-bottom: #56beff 2px solid;                /*ACCENT COLOUR HERE*/  
+}
+
 /* EMPHASIS */
 .emph {
     text-decoration: underline !important;
@@ -92,47 +127,13 @@ a:hover {
 }
 
 .emph2 {
-    color: #56beff;
+    color: #56beff;                                  /*ACCENT COLOUR HERE*/                     
 }
 
 .border-emph {
-    border: #56beff 2px solid;
+    border: #56beff 2px solid;                       /*ACCENT COLOUR HERE*/
 }
 
-
-/* FOOTER */
-#socialicons, #navigation-div {
-    /* float: left; */
-    width: 100%;
-    padding: 1%;
-}
-
-/* #navigation-div {
-    border-right:white 2px solid; 
-} */
-
-#mini-contact {
-    padding-top: 1%;
-}
-
-.footer h4 {
-    color: #4292c4;
-}
-
-.icon {
-    height: 2%;
-    width: 2%;
-}
-
-#tba {
-    height: 100% !important;
-    width: 100% !important ;
-}
-
-#first {
-    height: 4% !important;
-    width: 4% !important;
-}
 
 /* MISC */
 ::selection {
@@ -140,21 +141,27 @@ a:hover {
   }
 
 
-
-
-
-
-
-
-
-
-/* IGNORE */
-#social-icons {
-    text-align: center;
+/* OLD ICON FORMATTING */
+/* .icon {
+    height: 2%;
+    width: 2%;
 }
 
-#icon-div {
-    /* background-color: rgb(0, 0, 0); */
-    height: 150px !important;
-    width: 150px;
+#ig {
+    height: 100% !important;
+    width: 100% !important;
 }
+
+#first {
+    margin-top: 20% !important;
+    margin-left: 10% !important;
+    height: 60% !important;
+    width: 100% !important;
+    overflow: auto;
+}
+
+#tba {
+    height: 100% !important;
+    width: 65% !important;
+    margin-right: -10%;
+} */
