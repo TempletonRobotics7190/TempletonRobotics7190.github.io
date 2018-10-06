@@ -1,0 +1,160 @@
+/* BACKGROUND */
+.background { 
+    /* Change this image to be the one you want... */
+    background-color: rgba(30, 144, 255, 0.7);
+
+}
+
+.overlay {
+    background-image: url('../images/template_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html {
+    text-align: center;
+}
+
+/* FONTS */
+h1, h2, h3, h4, h5 {
+    /* These will probably change */
+    font-family: 'Overpass', monospace;
+}
+
+p {
+    /* These will probably change */
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.marker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* FONT SIZES */
+h1 {font-size: 325%;}
+h2 {font-size: 200%;}
+p {font-size: 100%;}
+
+/* block1 and block2 */
+.block1, .block2 {
+    padding: 2%;
+    color: white;
+}
+
+.block1 {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.block2 {
+    background-color: rgba(14, 14, 14, 0.8);
+}
+
+/* LINK FORMATTING */
+a:visited, a:link {
+    color: #56beff;                                   /*ACCENT COLOUR HERE*/
+}
+
+a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+.navbar a:visited, .navbar a:link, footer a:visited, footer a:link {
+    color: whitesmoke !important;  
+}
+
+.navbar a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+/* NAVBAR */
+.navbar {
+    background-color:black !important;
+}
+
+.active {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+    text-align: center;
+}
+
+/* EMPHASIS */
+.emph {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+.emph2 {
+    color: #56beff;
+}
+
+.border-emph {
+    border: #56beff 2px solid;
+}
+
+
+/* FOOTER */
+#socialicons, #navigation-div {
+    /* float: left; */
+    width: 100%;
+    padding: 1%;
+}
+
+/* #navigation-div {
+    border-right:white 2px solid; 
+} */
+
+#mini-contact {
+    padding-top: 1%;
+}
+
+.footer h4 {
+    color: #4292c4;
+}
+
+.icon {
+    height: 2%;
+    width: 2%;
+}
+
+#tba {
+    height: 100% !important;
+    width: 100% !important ;
+}
+
+#first {
+    height: 4% !important;
+    width: 4% !important;
+}
+
+/* MISC */
+::selection {
+    background: black; /* WebKit/Blink Browsers */
+  }
+
+
+
+
+
+
+
+
+
+
+/* IGNORE */
+#social-icons {
+    text-align: center;
+}
+
+#icon-div {
+    /* background-color: rgb(0, 0, 0); */
+    height: 150px !important;
+    width: 150px;
+}
