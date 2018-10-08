@@ -6,30 +6,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="template.css">       <!--Edit this-->
+    <link rel="stylesheet" href="<cssfilehere>.css">       <!--Edit this-->
+    <link rel="stylesheet" href="../source/main.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Overpass|Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
-<script>
-function codeappear() {
-    document.getElementById("code").innerHTML="&#60;code&#62;"
-}
-
-function codedisappear() {
-    document.getElementById("code").innerHTML="&#60;&#62;"
-}
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-});
-
-</script>
+<script src="../source/main.js"></script>
 
 <nav class="navbar navbar-expand-lg navbar-light db-light">
-    <a class="navbar-brand" href="/index.html">
-        <img src="../images/vrlogo.png" id="logo "width="30" height="30" class="d-inline-block align-top" alt="">
-        vr7190
+    <a class="navbar-brand" href="../home/index.html">
+        <img src="../images/_vrlogo.png" id="logo"width="30" height="30" class="d-inline-block align-top" alt="">vr7190
     </a>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +26,7 @@ $(document).ready(function(){
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
           <!-- add "active" to one of the classes here on whichever one correlates with what page your creating -->
-        <a class="nav-item nav-link active" href="../the-team/index.html">The Team</a>
+        <a class="nav-item nav-link" href="../the-team/index.html">The Team</a>
         <a class="nav-item nav-link" href="../the-robot/index.html">The Robot</a>
         <a class="nav-item nav-link" href="../sponsors/index.html">Sponsors</a>
         <a class="nav-item nav-link" href="../acknowledgements/index.html">Acknowledgements</a>
@@ -56,7 +43,7 @@ $(document).ready(function(){
 
         <div class="container-fluid block1" id="some_content"> 
             <h1 class="text-left">Welcome to the virtual home of <span class="emph">Templeton Robotics</span></h1>
-            <h2 id="title-subtext"></h2>
+            <h2 class="text-left" id="title-subtext"></h2>
         </div>
     
         <div class="container-fluid block2" id="some_content">
@@ -88,66 +75,9 @@ $(document).ready(function(){
         <a href="https://frc-events.firstinspires.org/2018/team/7190"><i class="fas fa-robot" style="font-size:30px" data-toggle="tooltip" title="FIRST Inspires"></i></a>
         <a href="https://github.com/templetonrobotics7190"><i class="fab fa-github" style="font-size:30px" data-toggle="tooltip" title="GitHub"></i></a>        
         <a href="https://templeton.vsb.bc.ca"><i class="fas fa-school" style="font-size:30px" data-toggle="tooltip" title="Templeton Secondary School"></i></a>        
-
-
-<!-- 
-    INSTAGRAM
-    <div class="icon-div" id="ig_div">
-        <a href="https://www.thebluealliance.com/team/7190">
-            <img src="../images/IG.png" class="icon" id="ig" data-toggle="tooltip" title="Instagram">
-        </a>
-    </div>
-        
-    FIRST
-    <div class="icon-div" id="first_div">
-    <a href="https://frc-events.firstinspires.org/2018/team/7190">
-        <img src="../images/FIRST.png" class="icon" id="first"data-toggle="tooltip" title="FIRST Inspires">
-    </a>
-    </div>    
-
-    The Blue Alliance
-    <div class="icon-div" id="tba_div">
-        <a href="https://frc-events.firstinspires.org/2018/team/7190">
-            <img src="../images/TBA.png" class="icon" id="tba" data-toggle="tooltip" title="The Blue Alliance">
-        </a>
-    </div> 
-
-    Facebook
-    <div class="icon-div" id="first_div">
-        <a href="https://frc-events.firstinspires.org/2018/team/7190">
-            <img src="../images/FIRST.png" class="icon" id="first" data-toggle="tooltip" title="Facebook">
-        </a>
-    </div>     
-
-    Templeton Secondary
-    <div class="icon-div" id="first_div">
-        <a href="https://frc-events.firstinspires.org/2018/team/7190">
-            <img src="../images/FIRST.png" class="icon" id="first" data-toggle="tooltip" title="Templeton Secondary School">
-        </a>
-    </div> 
-
-
-    Github
-    <div class="icon-div" id="first_div">
-        <a href="https://frc-events.firstinspires.org/2018/team/7190">
-            <img src="../images/FIRST.png" class="icon" id="first" data-toggle="tooltip" title="GitHub">
-        </a>
-    </div>      -->
-
-        <!-- Social icons I want (hint hint Kevin) 
-            -Facebook
-            -Templeton Secondary
-            -commented out gofund me
-            -Github
-            
-            Yeah
-            It would be cool if we had custom FIRST and tba icons, but I don't know how hard that is to do
-            https://fontawesome.com/icons?d=gallery
-            icons here ^^^^
-        -->
     </div>
 
-    <div id="mini-contact" class="block1">
+    <div id="mini-contact" class="block2">
         <p>You can email us at: <a href="mailto:templeton7190@gmail.com"><br /><span class="emph2">templeton7190@gmail.com</span></a></p>
         <a id="code" href="https://github.com/TempletonRobotics7190/Website_Placeholder" target="_blank" onmouseover="codeappear();" onmouseout="codedisappear();">&#60;&#62;</a>
     </div>
