@@ -1,0 +1,17 @@
+.background { 
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color:rgb(27, 0, 25) !important;
+}
+
+/* END BACKGROUND */

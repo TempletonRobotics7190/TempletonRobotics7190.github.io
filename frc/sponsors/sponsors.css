@@ -1,0 +1,40 @@
+.background { 
+    background-color: rgba(131, 255, 30, 0.7);
+}
+
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color:rgb(0, 27, 1) !important;
+}
+
+/* END BACKGROUND */
+
+.logos1:hover, .logos2:hover {
+    border: transparent 8px solid; 
+}
+
+.logos1 {
+    width: 33%;
+    padding: 2%;
+    height: 1;
+}
+
+.logos2 {
+    width: 24%;
+    padding: 2%;
+}
+
+#sponsor1 {
+    padding: 5%;
+}
+
+/* BLACK TEXT LOGOS ARE TOO FAINT AGAINST THE DEFAULT BLOCK1 BACKGROUND */
+.block1 {background-color: rgba(15, 15, 15, 0.8) !important;}
+.block2 {background-color: rgba(26, 26, 26, 0.8) !important;}

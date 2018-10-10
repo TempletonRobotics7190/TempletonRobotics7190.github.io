@@ -1,0 +1,43 @@
+.background { 
+    background-color: rgba(255, 195, 30, 0.7);
+}
+
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color:rgb(27, 12, 0) !important;
+}
+
+/* END BACKGROUND */
+.block1 p, .block2 p {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+#our-story img, #whoweare img {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2%;
+    border: rgba(80, 68, 0, 0.404) 2px solid;
+}
+
+.bios p {
+    padding-left: 0%;
+    padding-right: 5%;
+    margin-left: 34%;
+    text-align: left;   
+    padding-top: 0.75%;
+    padding-right: 12%;
+}
+
+.bios img {
+    margin-left: 12%;
+    border: rgba(80, 68, 0, 0.404) 2px solid;
+    border-radius: 50%;
+}

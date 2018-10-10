@@ -1,0 +1,54 @@
+.background { 
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.navbar {
+    background-color:rgb(4, 0, 27) !important;
+}
+
+/* END BACKGROUND */
+#about_img {
+    width: 50%;
+    height: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border: rgba(0, 35, 80, 0.404) 2px solid;
+}
+
+#about p {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+#splash button {
+    width: 10%;
+    height: 5%;
+    padding: 0.75%;
+}
+
+#donate {
+    padding: 0px;
+    background-image: url('../images/home_gofundme.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#donate_button {
+    font-size: 150%;
+    padding: 1%;
+    width: 15%;
+}
+
+#donate p {
+    padding-left: 12%;
+    padding-right: 12%;
+}
