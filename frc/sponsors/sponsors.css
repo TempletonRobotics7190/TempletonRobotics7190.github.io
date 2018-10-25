@@ -1,0 +1,47 @@
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* END BACKGROUND */
+
+#xmf {
+    height: 300px;
+}
+
+#xmf img {
+    width:20%;
+    margin: 5%;
+}
+
+#fh img {
+    width: 25%;
+    margin: 5%;
+}
+
+img:hover {
+    border: 10px transparent solid;
+}
+
+/* 
+.logos1 {
+    width: 100%;
+    float: left;
+}
+
+.logos2 {
+    width: 24%;
+    padding: 2%;
+}
+
+.logos1:hover,.logos2:hover {
+    border: 10px transparent solid;
+} */
+
+
+/* BLACK TEXT LOGOS ARE TOO FAINT AGAINST THE DEFAULT BLOCK1 BACKGROUND */
+.block1 {background-color: rgba(15, 15, 15, 0.8) !important;}
+.block2 {background-color: rgba(26, 26, 26, 0.8) !important;}

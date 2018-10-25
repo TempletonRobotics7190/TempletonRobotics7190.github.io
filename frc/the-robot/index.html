@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<html>
+<head>
+    <title>vr7190 | The Robot</title>         <!--Edit this-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="the-robot.css">       <!--Edit this-->
+    <link rel="stylesheet" href="../source/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Overpass|Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<script src="../source/main.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light db-light">
+    <a class="navbar-brand" href="../home/index.html">
+        <img src="../images/_vrlogo.png" id="logo"width="30" height="30" class="d-inline-block align-top" alt="">vr7190
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+          <!-- add "active" to one of the classes here on whichever one correlates with what page your creating -->
+        <a class="nav-item nav-link" href="../the-team/index.html">The Team</a>
+        <a class="nav-item nav-link active" href="../the-robot/index.html">The Robot</a>
+        <a class="nav-item nav-link" href="../sponsors/index.html">Sponsors</a>
+        <a class="nav-item nav-link" href="../acknowledgements/index.html">Acknowledgements</a>
+      </div>
+    </div>
+</nav>
+
+<body>
+    <div class="overlay">
+    <div class="background">
+
+        <!--Feel free to add more divs here, just make sure that they alternate classes block1 and block2-->
+
+        <div class="container-fluid block1" id="splash"> 
+            <h1 class="text-left">The Robot</h1>
+            <h3 id="title-subtext" class="text-left muted-emph">The robot that built the team</h3>
+        </div>
+
+        <div class="container-fluid block2" id="robot">
+                <h1 id="roboheader">Our Robot - "Flippy Boi"</h2>
+                <div class="parentcol block1" id="flipper"> 
+                    <div class="col1"><img src="../images/the-robot_robot1.jpeg"></div>
+                    <div class="col2" id="design"><h3>The Flipper</h3><br><p>The flipper is comprised of a stiff plywood board actuated by a high-powered pneumatic piston. When the 60 psi of pressure is let through the solenoid valve that sits inside the robot, the flipper throws a powercube into the switch. This mechanism has never failed in competition.</p></div>
+                </div>
+                <div class="parentcol block2" id="chassis"> 
+                    <div class="col1" id="design"><h3>The Chassis</h3><br><p>The flipper sits atop a robust aluminum chassis. The six belt-driven wheels are controlled by four 337 Watt CIM motors which gives our robot more than enough power, speed, and agility to quickly drive from portal to switch and back again.</p></div>
+                    <div class="col2"><img src="../images/the-robot_robot1.jpeg"></div>
+                </div>
+                <div class="parentcol block1" id="design"> 
+                    <div class="col1"><img src="../images/the-robot_robot1.jpeg"    ></div>
+                    <div class="col2" id="design"><h3>The Design</h3><br><p>We decided to make our robot modular to make it easier to fix and improve. Our entire flipper can be removed easily with four nuts, giving us access to all of the electronics in the chassis. </p></div>
+                </div>
+            </div>
+
+
+
+    <footer class="footer">
+    <div id="navigation-div" class="block1">
+        <h4>Navigation</h4>
+        <a href="/index.html">Home</a> | 
+        <a href="/the-team/index.html">The Team</a> | 
+        <a href="/the-robot/index.html">The Robot</a> | 
+        <a href="/sponsors/index.html">Sponsors</a> | 
+        <a href="/acknowledgements/index.html">Acknowledgements</a>
+    </div>
+
+    <div id="socialicons" class="block1">
+        <a href="https://www.facebook.com/groups/136812663683148/"><i class="fab fa-facebook-f" style="font-size:30px" data-toggle="tooltip" title="Facebook"></i></a>
+        <a href="https://www.instagram.com/templetonrobotics/"><i class="fab fa-instagram" style="font-size:30px" data-toggle="tooltip" title="Instagram"></i></a>
+        <a href="https://www.thebluealliance.com/team/7190"><i class="fas fa-shield-alt" style="font-size:30px" data-toggle="tooltip" title="The Blue Alliance"></i></a>
+        <a href="https://frc-events.firstinspires.org/2018/team/7190"><i class="fas fa-robot" style="font-size:30px" data-toggle="tooltip" title="FIRST Inspires"></i></a>
+        <a href="https://github.com/templetonrobotics7190"><i class="fab fa-github" style="font-size:30px" data-toggle="tooltip" title="GitHub"></i></a>        
+        <a href="https://templeton.vsb.bc.ca"><i class="fas fa-school" style="font-size:30px" data-toggle="tooltip" title="Templeton Secondary School"></i></a>        
+
+    </div>
+
+    <div id="mini-contact" class="block1">
+        <p>You can email us at: <a href="mailto:templeton7190@gmail.com"><br /><span class="emph2">templeton7190@gmail.com</span></a></p>
+        <p class="muted-emph">Made with <a id="code" href="https://github.com/TempletonRobotics7190/Website_Placeholder" target="_blank" onmouseover="codeappear();" onmouseout="codedisappear();">&#60;&#62;</a> by Team 7190</p>    </div>
+
+    </footer>
+
+
+    </div> <!--This belongs to the "background" div, ie. nothing should be after this!  -->
+    </div>
+</body>
+</html>

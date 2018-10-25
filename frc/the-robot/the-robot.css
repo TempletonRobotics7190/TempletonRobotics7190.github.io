@@ -1,0 +1,20 @@
+.overlay {
+    /* Change this image to be the one you want... */
+    background-image: url('../images/home_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* END BACKGROUND */
+#flipper {
+    padding-bottom: 6%;
+}
+
+#chassis {
+    padding-bottom: 0%;
+}
+
+#design {
+    padding-bottom: 7%;
+}

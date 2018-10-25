@@ -1,0 +1,204 @@
+html {
+    text-align: center;
+}
+
+/* FONTS */
+h1, h2, h3, h4, h5 {
+    font-family: 'Overpass', monospace;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.marker {
+    font-family: 'Permanent Marker', cursive;
+}
+
+/* FONT SIZES */
+h1 {font-size: 400%;}
+h2 {font-size: 300%;}
+h3 {font-size: 250%;}
+h4 {font-size: 125%;}
+p {font-size: 100%;}
+
+/* block1 and block2 */
+.block1, .block2 {
+    padding: 2%;
+    color: white;
+    text-align: center;
+}
+
+.block1 {background-color: rgba(0, 0, 0, 0.8)}
+.block2 {background-color: rgba(14, 14, 14, 0.8);}
+
+/* LINK FORMATTING */
+a:visited, a:link {
+    color: #56beff;                                  /*ACCENT COLOUR HERE*/
+}
+
+a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+.navbar a:visited, .navbar a:link, footer a:visited, footer a:link {
+    color: whitesmoke !important;  
+}
+
+.navbar a:hover {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+/* NAVBAR */
+.navbar {
+    padding-bottom: 1%
+}
+
+.navitem {
+    padding: 2%;
+}
+
+.navbar img {
+    padding: 0% !important;
+}
+
+.active {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+#logo {
+    margin-right: 5%;
+}
+
+/* FOOTER */
+.footer {
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+#socialicons, #navigation-div {
+    width: 100%;
+    padding: 1%;
+}
+
+#socialicons {
+    height: 5em !important;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#mini-contact {
+    padding-top: 1%;
+    margin-top: 0px;
+}
+
+.footer h4 {
+    color: #4292c4;                                  /*ACCENT COLOUR HERE (SLIGHTLY DARKER)*/
+}
+
+#navigation-div {
+    padding-top: 3%;
+}
+
+/* ICONS */
+#social-icons {
+    text-align: center;
+}
+
+.icon-div {
+    /* background-color: rgb(0, 0, 0); */
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+i {
+    margin-right: 1%;
+    padding-bottom: 0.2%;
+}
+
+i:hover {
+    border-bottom: #56beff 2px solid;                /*ACCENT COLOUR HERE*/  
+}
+
+/* STANDARD CSS */
+.emph {
+    text-decoration: underline !important;
+    text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
+}
+
+.emph2 {
+    color: #56beff;                                  /*ACCENT COLOUR HERE*/                     
+}
+
+.muted-emph {
+    color: #949494;
+}
+
+.border-emph {
+    border: #56beff 2px solid;                       /*ACCENT COLOUR HERE*/
+}
+
+#splash {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* DUAL COLUMN SYSTEM */
+.col1 {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding-bottom: 50px !important;
+    background-color: transparent !important;
+    padding-right: 0px;
+}
+
+.col2 {
+    margin-left: 50%;
+    text-align: center;
+    padding-bottom: 50px !important;
+    background-color: transparent !important;
+    padding-left: 0px;
+}
+
+.parentcol {
+    margin: auto;
+}
+
+/* BUTTONS */
+button {
+    border: #4292c4a6 2px solid;                        /*ACCENT COLOUR HERE*/
+    background-color: rgba(0, 147, 192, 0.13);          /*ACCENT COLOUR HERE*/
+    color: #a2dbff;                                     /*ACCENT COLOUR HERE*/
+    transition: all 100ms linear;
+}
+
+button:hover {
+    background-color: #295d7ea6;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+/* PRETTY COLOURS */
+
+.background { 
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.navbar {
+    background-color:rgb(4, 0, 27) !important;
+}
+
+/* MISC */
+::selection {
+    background: black;
+  }
+
+.float-left {
+    float: left;
+}
