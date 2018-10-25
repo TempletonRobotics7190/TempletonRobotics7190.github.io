@@ -1,7 +1,3 @@
-.background { 
-    background-color: rgba(30, 144, 255, 0.7);
-}
-
 .overlay {
     /* Change this image to be the one you want... */
     background-image: url('../images/home_background.jpg');
@@ -10,9 +6,6 @@
     background-size: cover;
 }
 
-.navbar {
-    background-color:rgb(4, 0, 27) !important;
-}
 
 /* END BACKGROUND */
 #about_img {

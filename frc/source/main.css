@@ -56,6 +56,14 @@ a:hover {
     padding-bottom: 1%
 }
 
+.navitem {
+    padding: 2%;
+}
+
+.navbar img {
+    padding: 0% !important;
+}
+
 .active {
     text-decoration: underline !important;
     text-decoration-color: #56beff !important;       /*ACCENT COLOUR HERE*/
@@ -167,11 +175,23 @@ button {
     border: #4292c4a6 2px solid;                        /*ACCENT COLOUR HERE*/
     background-color: rgba(0, 147, 192, 0.13);          /*ACCENT COLOUR HERE*/
     color: #a2dbff;                                     /*ACCENT COLOUR HERE*/
+    transition: all 100ms linear;
 }
 
 button:hover {
     background-color: #295d7ea6;
     cursor: pointer;
+    transition: all 100ms linear;
+}
+
+/* PRETTY COLOURS */
+
+.background { 
+    background-color: rgba(30, 144, 255, 0.7);
+}
+
+.navbar {
+    background-color:rgb(4, 0, 27) !important;
 }
 
 /* MISC */
