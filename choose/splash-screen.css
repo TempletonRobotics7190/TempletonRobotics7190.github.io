@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oxygen');
+
+html {
+    background-color: rgb(14, 0, 0);
+    color: white;
+    text-align: center;
+    padding-bottom: 10%; 
+}
+
+h1, h2, h3 {font-family: 'Oxygen', sans-serif;}
+p, button, a {font-family: 'Noto Sans KR', sans-serif;}
+h1 {font-size: 80px;}
+h2 {font-size: 50px;}
+
+button {
+    border: transparent solid 2px;
+    background-color: transparent;          /*ACCENT COLOUR HERE*/
+    color: #ffffff;                                     /*ACCENT COLOUR HERE*/
+    transition: all 100ms linear;
+    font-size: 110px;
+    width: 40%;
+    margin: 1%;
+}
+
+button:hover {
+    border: #ffffff solid 2px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+button:active {
+    background-color: rgba(141, 0, 0, 0.062);
+    border: black 2px;
+}
+
+img {
+    width: 50%;
+    border: #31000091 2px solid;
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.emph {
+    color: rgb(255, 64, 58);
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 58, 58);
+}
+
+#Navigation {
+    padding-top: 2%;
+}
+
+a, a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgb(255, 62, 62);
+}
