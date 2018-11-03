@@ -1,4 +1,4 @@
->have a domain, 7190.ca, that redirects to templeton.ca/frc
+>have a domain, 7190.ca, that redirects to templetonrobotics.ca/frc
 
 >instead of instagram.com/temprobotics_7190 have 
     -7190.ca/instagram
