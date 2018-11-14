@@ -64,3 +64,7 @@ a, a:visited {
 a:hover {
     color: rgb(255, 62, 62);
 }
+
+.map {
+    padding-top: 30px;
+}
