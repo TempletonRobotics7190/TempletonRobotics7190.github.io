@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oxygen');
 
+body {
+    margin: 0;
+}
+
 html {
-    background-color: rgb(14, 0, 0);
-    color: white;
+    background-color: #eeeeee;
+    color: black;
     text-align: center;
     padding-bottom: 10%; 
 }
@@ -15,7 +19,7 @@ h2 {font-size: 50px;}
 button {
     border: transparent solid 2px;
     background-color: transparent;          /*ACCENT COLOUR HERE*/
-    color: #ffffff;                                     /*ACCENT COLOUR HERE*/
+    color: darkblue;                                     /*ACCENT COLOUR HERE*/
     transition: all 100ms linear;
     font-size: 110px;
     width: 40%;
@@ -23,7 +27,7 @@ button {
 }
 
 button:hover {
-    border: #ffffff solid 2px;
+    border: black solid 2px;
     background-color: transparent;
     cursor: pointer;
     transition: all 100ms linear;
@@ -49,8 +53,8 @@ p {
 }
 
 .underline {
-    text-decoration: underline;
-    text-decoration-color: rgb(255, 58, 58);
+    /*text-decoration: underline;*/
+    /*text-decoration-color: rgb(255, 58, 58);*/
 }
 
 #Navigation {
@@ -58,7 +62,7 @@ p {
 }
 
 a, a:visited {
-    color: white;
+    color: black;
 }
 
 a:hover {
@@ -67,4 +71,32 @@ a:hover {
 
 .map {
     padding-top: 30px;
+}
+
+.header {
+    height: 600px;
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    url('../frc/images/home_background.JPG');
+    background-size: cover;
+
+    color: white!important;
+}
+
+.header-content {
+    padding-top: 200px;
+    margin-top: 0;
+}
+
+
+.our-teams {
+    padding: 30px;
+    background-color: white;
 }
