@@ -1,63 +1,190 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta name="keywords" content="robot, robotics, templeton">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta class="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Home | Templeton Robotics</title>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,900|Raleway:300" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Hero(extended) navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <img src="images/_vrlogo.png" height="50">
+    </div>
 
-        <link rel="stylesheet" href="splash-screen.css">
-        <title>Templeton Robotics</title>
-
-    </head>
-    <body>
-        <div class="header">
-            <div class="header-content">
-                <h1><span class="underline">Templeton Robotics</span></h1>
-            </div>
-        </div>
-        <div class="our-teams">
-            <h2> Our Teams </h2>
-            <hr width="20">
-            <a href="https://www.thebluealliance.com/team/7190"><button id="frc">7190</button></a>
-            <a href="https://www.vexrobotics.com/vexiq/"><button id="vex">34777A</button></a>
-        </div>
-
-        <div>
-                <h2>Our Mission:</h2>
-                <h2><span class="emph">To build cool robots</span></h2>
-        </div>
-    
-        <div>
-            <img src="../frc/images/home_gofundme.jpg">
-        </div>
-
-
-        <div class="row">
-            <div class="col-sm-3 directions">
-                <h3>Directions</h3>
-                <hr width="20">
-
-                <p>
-                    727 Templeton Dr. <br/>
-                    Vancouver, BC V5L 4N8 <br/>
-                    Canada <br/>
-                    Phone: (604) 713-8984 <br/>
-                </p>
-            </div>
-
-            <div class="col-sm-3 map">
-                <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Templeton%20Secondary%20School&key=AIzaSyDqWhfdZcVA0X2836DuBC4HYP0Jc7LYy8k" allowfullscreen></iframe>
-            </div>
-
-            <div class="col-sm-3">
-                <div id="Navigation">
-                    <h3>Navigation</h3>
-                    <a href='https://www.thebluealliance.com/team/7190'>FRC Team 7190</a> &nbsp;|&nbsp;
-                    <a href='https://www.vexrobotics.com/vexiq/'>Vex Team 34777A</a>
-
-                    <p>Want to join the team or have any questions?</p>
-                    <p>Email us at <a href="mailto:info@templetonrobotics.ca">info@templetonrobotics.ca</a></p>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
+<!--         <li class=""><a href="#">About</a></li>
+        <li><a href="#">Donate</a></li> -->
+      </ul>
+        
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#top">Home</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#directions">Directions</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <!-- Hero unit -->
+    <div class="hero" id="top">
+        <div class="hero__overlay hero__overlay--gradient"></div>
+        <div class="hero__mask"></div>
+        <div class="hero__inner">
+            <div class="container">
+                <div class="hero__content">
+                    <div class="hero__content__inner" id='navConverter'>
+                        <img src="images/_vrlogo.png" height="100" class="header-image"> <br/>
+                        <h3 class="accompanying-title"> We are: </h3>
+                        <h1 class="hero__title">Templeton Robotics</h1>
+                        <p class="hero__text text-center">  </p>
+                        <a target="_blank" href="https://www.thebluealliance.com/team/7190" class="button button__accent">FRC Team: 7190</a>
+                        <a target="_blank" href="https://www.vexrobotics.com/vexiq/" class="button button__accent">Vex Team: 34777A </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+    <div class="hero__sub">
+        <span id="scrollToNext" class="scroll">
+
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class='hero__sub__down' fill="currentColor" width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M256,298.3L256,298.3L256,298.3l174.2-167.2c4.3-4.2,11.4-4.1,15.8,0.2l30.6,29.9c4.4,4.3,4.5,11.3,0.2,15.5L264.1,380.9c-2.2,2.2-5.2,3.2-8.1,3c-3,0.1-5.9-0.9-8.1-3L35.2,176.7c-4.3-4.2-4.2-11.2,0.2-15.5L66,131.3c4.4-4.3,11.5-4.4,15.8-0.2L256,298.3z"/> </svg> 
+        </span>
+    </div>
+
+    <div id="sponsors" class="text-center container">
+    
+        <div class="row">
+            <h3 class="section-heading"> Our Sponsors</h3>
+            <hr class="divider">
+            <div class="col-sm-3">
+                <a href="https://www.hinterlandgames.com"><img class="logos1" src="images/sponsors_hinterland.png"></a>
+            </div>
+
+            <div class="col-sm-3"><a href="https://www.hatch.com"><img class="logos1" src="images/sponsors_hatch.png"></a>
+            </div>
+                
+            <div class="col-sm-3">
+                <a href="https://www.xerox.com"><img class="logos1" src="images/sponsors_xerox.png"></a>
+            </div>  
+
+            <div class="col-sm-3">
+                <a href="https://www.cellula.com"><img class="logos2" src="images/sponsors_cellula.png"></a></div>
+            </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <a href="http://www.snclavalin.com/en/"><img class="logos2" src="images/sponsors_snc-lavalin.png"></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="https://www.microsoft.com/en-ca/"><img class="logos2" src="images/sponsors_microsoft.png"></a>
+            </div>
+
+            <div class="col-sm-4">
+                <a href="https://www.firstinspires.org"><img height="150" class="logos2" src="images/sponsors_first.png"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Expanded sections -->
+    <div id="about">
+        <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/home_about.JPG" class="img-responsive">
+                </div>
+                <div class="col-sm-6">
+                    <h2 class="section-heading">About us</h2>
+                    <hr class="divider divider-right">
+                    <p class="expanded__text body-copy">
+                    In early November of 2017, a student by the name of Arsh Seth showed an interest in robotics. New to the school and country, Arsh set out to meet people that also shared his interests. Thanks to the supportive hand of one Mr. Warren Lloyd, a teacher at Templeton Secondary, Arsh was able to start an afterschool club. Between the budget cuts and insufficient funds, it was a rocky start from the get-go.
+                    </p>
+                </div>
+    </div>
+    <div class="container" id="directions">
+        <div class="row center">
+            <h2 class="section-heading"  style="margin:auto; text-align: center; padding-top: 30px;">Directions</h2>
+            <hr class="divider" style="margin-bottom: 30px;">
+            <div class="col-sm-12">
+                <p class="body-copy"  style="margin:auto">
+                    <strong> We are located at: </strong> <br/> <br/>
+                        727 Templeton Dr. <br/>
+                        Vancouver, BC V5L 4N8 <br/>
+                        Canada <br/>
+                        Phone: (604) 713-8984 <br/>
+                </p> 
+                <iframe frameborder="0" style="border:0; width: 100%; padding-top: 50px; padding-bottom: 50px; height: 70vh" src="https://www.google.com/maps/embed/v1/place?q=Templeton%20Secondary%20School&key=AIzaSyDqWhfdZcVA0X2836DuBC4HYP0Jc7LYy8k" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Call To Action -->
+    <div class="cta cta--reverse">
+        <div class="container">
+            <div class="cta__inner">
+                <h2 class="cta__title">Donate to us!</h2>
+                <p class="cta__sub cta__sub--center">We need your help. </p>
+                <a href="#" class="button button__accent">Donate</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer footer--dark">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="index.html" class="footer__textLogo">Templeton Robotics</a>
+                <div class="footer__data">
+                    <!-- <div class="footer__data__item">
+                        <div class="footer__row">
+                            Created by <a href="https://twitter.com/ninalimpi" target="_blank" class="footer__link">Katerina Limpitsouni</a>
+                        </div>
+                        <div class="footer__row">
+                        Code/design by <a href="https://twitter.com/anges244" target="_blank" class="footer__link">Aggelos Gesoulis</a>
+                        </div>
+                    </div> -->
+                    <div class="footer__data__item">
+                        <!-- <div class="footer__row">Created for <a href="https://undraw.co" target="_blank" class="footer__link">unDraw</a>
+                        </div>
+                        <div class="footer__row">Special thx to <a href="https://shareboost.co" target="_blank" class="footer__link">ShareBoost</a> for the support
+                        </div> -->
+                    </div>
+                    <div class="footer__data__item">
+                    <!-- <div class="footer__row">
+                        <a href="https://github.com/anges244/evie" target="_blank" class="footer__link">GitHub</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://twitter.com/undraw_co" target="_blank" class="footer__link">Twitter</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="https://www.facebook.com/undraw.co/" target="_blank" class="footer__link">Facebook</a>
+                    </div>
+                    <div class="footer__row">
+                        <a href="./additional.html" class="footer__link">MIT license</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+<script src='js/app.js'></script>
+</body>
 </html>
