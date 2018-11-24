@@ -864,7 +864,10 @@ select {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  color: #ffffff; }
+  color: #ffffff;
+  /* Improve performance when scrolling */
+  -webkit-transform: translate3d(0,0,0);
+}
   .hero__inner {
     position: relative;
     z-index: 3; }
