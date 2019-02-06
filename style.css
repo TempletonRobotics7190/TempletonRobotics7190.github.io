@@ -905,6 +905,7 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
+  /* TODO: Fix height here for child pages!!! */
   min-height: calc( 100vh - 50px);
   padding: calc( 92px) 0;
   overflow: auto; }
@@ -1479,4 +1480,8 @@ select {
   color: white;
   font-weight: 800;
   font-family: Montserrat;
+}
+
+#directions {
+  padding-top:30px;
 }
