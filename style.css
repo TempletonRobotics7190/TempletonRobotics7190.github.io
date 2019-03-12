@@ -878,7 +878,7 @@ select {
   width: 100%;
   opacity: 0.80;
   z-index: 1;
-  background-color: #333; 
+  background-color: #333;
 }
 
 .hero__overlay--gradient {
@@ -1064,7 +1064,7 @@ select {
   max-width: 550px; }
 
 .expanded__text {
-  max-width: 60ch; 
+  max-width: 60ch;
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
@@ -1086,7 +1086,7 @@ select {
   background: #4641FF; }
 
 .cta__title {
-  color: inherit; 
+  color: inherit;
   font-weight: 800;
   font-family: Montserrat;
   font-size: 40px;
@@ -1095,7 +1095,7 @@ select {
 .cta__sub {
   opacity: 0.85;
   max-width: 58ch;
-  margin: 16pt auto 24pt auto; 
+  margin: 16pt auto 24pt auto;
   font-weight: 300;
   font-family: Lato;
   font-size: 16px;
@@ -1484,4 +1484,8 @@ select {
 
 #directions {
   padding-top:30px;
+}
+
+.sponsors-individual {
+  font-size: 26px;
 }
