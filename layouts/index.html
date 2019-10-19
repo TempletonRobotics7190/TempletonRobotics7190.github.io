@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	{{ partial "head.html" }}
+	
+	<style>
+		.hero {
+			height: 100vh;
+
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ .Params.hero_image }}");
+			background-size: cover;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	{{ partial "navigation.html" }}
+
+	<!-- Jumbotron -->
+	<div class="jumbotron hero">
+		<div class="container">
+			<div>
+				<h1 class="display-1 text-white text-center">{{ .Title }}</h1>
+
+				<div class="row text-center">
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary btn-block float-right">FRC Team: 7190</button>
+					</div>
+					<div class="col-md-6">
+						<button type="button" class="btn btn-primary btn-block float-left">VEX Team : 34777A</button>
+					</div>
+				</div>
+
+				<div class="row text-center">
+					<div class="col-md-12">
+						<button type="button" class="btn btn-info btn-block mt-3">Donate</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<!-- Content -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<img src="{{ .Params.about_image }}" alt="Team Photo" class="img-fluid" />
+			</div>
+			<div class="col-md-6">
+				<p class="lead">{{ .Content }}</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	{{ partial "footer.html" }}
+</body>
+</html>
