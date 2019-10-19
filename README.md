@@ -1,8 +1,2 @@
-# Templeton Robotics Website
-Site for Templeton Robotics. 
-
-To Do: 
-
-- 'featured on' section
-- robot pictures
-- improve description on homepage
+# Templeton Robotics Hugo Website
+Hugo site for Templeton Robotics
