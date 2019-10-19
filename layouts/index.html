@@ -2,18 +2,14 @@
 
 <html lang="en">
 <head>
-	{{ partial "head.html" }}
+	{{ partial "meta.html" }}
+
+	<title>{{ .Title }}</title>
 	
 	<style>
 		.hero {
-			height: 100vh;
-
 			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ .Params.hero_image }}");
 			background-size: cover;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
 		}
 	</style>
 </head>
@@ -22,22 +18,22 @@
 	{{ partial "navigation.html" }}
 
 	<!-- Jumbotron -->
-	<div class="jumbotron hero">
+	<div class="jumbotron hero min-vh-100 w-100 d-flex flex-wrap align-items-center">
 		<div class="container">
 			<div>
-				<h1 class="display-1 text-white text-center">{{ .Title }}</h1>
+				<h2 class="display-2 text-white text-center">{{ .Title }}</h2>
 
-				<div class="row text-center">
-					<div class="col-md-6">
-						<button type="button" class="btn btn-primary btn-block float-right">FRC Team: 7190</button>
+				<div class="row">
+					<div class="col">
+						<button type="button" class="btn btn-primary btn-block">FRC Team: 7190</button>
 					</div>
-					<div class="col-md-6">
-						<button type="button" class="btn btn-primary btn-block float-left">VEX Team : 34777A</button>
+					<div class="col">
+						<button type="button" class="btn btn-primary btn-block">VEX Team : 34777A</button>
 					</div>
 				</div>
 
-				<div class="row text-center">
-					<div class="col-md-12">
+				<div class="row">
+					<div class="col">
 						<button type="button" class="btn btn-info btn-block mt-3">Donate</button>
 					</div>
 				</div>
@@ -47,12 +43,66 @@
 
 	<!-- Content -->
 	<div class="container">
+		<h2>About Us</h2>
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col">
 				<img src="{{ .Params.about_image }}" alt="Team Photo" class="img-fluid" />
 			</div>
-			<div class="col-md-6">
+			<div class="col">
 				<p class="lead">{{ .Content }}</p>
+			</div>
+		</div>
+	</div>
+
+	<hr />
+
+	<!-- Sponsors -->
+	<div class="container">
+		<h2>Our Wonderful Sponsors!</h2>
+
+		<!-- Align images to the middle of column -->
+		<div class="row text-center d-flex flex-wrap align-items-center mb-3">
+			<div class="col">
+				<img src="sponsors-hatch.png" alt="Hatch" class="img-fluid" />
+			</div>
+			<div class="col">
+				<img src="sponsors-microsoft.png" alt="Microsoft" class="img-fluid" />
+			</div>
+			<div class="col">
+				<img src="sponsors-first.png" alt="First" class="img-fluid" width="50%" height="50%" />
+			</div>
+		</div>
+		<div class="row text-center d-flex flex-wrap align-items-center mb-3">
+			<div class="col">
+				<img src="sponsors-pq-systems.png" alt="PQ Systems" class="img-fluid" />
+			</div>
+			<div class="col">
+				<img src="sponsors-action-athletics.png" alt="Action Athletics" class="img-fluid" width="50%" height="50%" />
+			</div>
+			<div class="col">
+				<img src="sponsors-first-broadband.png" alt="First Broadband" class="img-fluid" />
+			</div>
+		</div>
+		<div class="row text-center d-flex flex-wrap align-items-center mb-3">
+			<div class="col">
+				<h3>East End Boys Club</h3>
+			</div>
+			<div class="col">
+				<h3>Hon. Shane Simpson, MLA</h3>
+			</div>
+			<div class="col">
+				<h3>Mr. Peter Saunders</h3>
+			</div>
+		</div>
+		<div class="row text-center d-flex flex-wrap align-items-center">
+			<div class="col">
+				<h3>Mr. Kent Yuen</h3>
+			</div>
+			<div class="col">
+				<h3>Mr. Rudolph Chiang</h3>
+			</div>
+			<div class="col">
+				<h3>Dr. Damon Tedford</h3>
 			</div>
 		</div>
 	</div>
