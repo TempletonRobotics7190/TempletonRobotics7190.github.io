@@ -21,14 +21,14 @@
 	<div class="jumbotron hero min-vh-100 w-100 d-flex flex-wrap align-items-center">
 		<div class="container">
 			<div>
-				<h2 class="title display-2 text-white text-center">{{ .Title }}</h2>
+				<h1 class="title text-white text-center">{{ .Title }}</h1>
 
 				<div class="row">
 					<div class="col">
 						<a href="{{ .Params.frc_link }}"><button type="button" class="btn btn-primary btn-block">FRC Team: 7190</button></a>
 					</div>
 					<div class="col">
-						<a href="{{ .Params.vex_link }}"><button type="button" class="btn btn-primary btn-block">VEX Team : 34777A</button></a>
+						<a href="{{ .Params.vex_link }}"><button type="button" class="btn btn-primary btn-block">VEX Team: 34777A</button></a>
 					</div>
 				</div>
 
@@ -45,10 +45,10 @@
 	<div class="container">
 		<h2 class="title">About Us</h2>
 		<div class="row">
-			<div class="col">
+			<div class="col-md-6 col-12">
 				<img src="{{ .Params.about_image }}" alt="Team Photo" class="img-fluid" />
 			</div>
-			<div class="col">
+			<div class="col-md-6 col-12">
 				<p class="lead">{{ .Content }}</p>
 			</div>
 		</div>
