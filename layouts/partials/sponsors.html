@@ -2,49 +2,36 @@
 <div class="container">
 	<h2 class="title">Our Wonderful Sponsors!</h2>
 
-	<!-- Align images to the middle of column -->
-	<div class="row text-center d-flex flex-wrap align-items-center mb-3">
-		<div class="col">
-			<img src="sponsors-hatch.png" alt="Hatch" class="img-fluid" />
+
+	{{ $sponsors := .Params.sponsors }}
+
+	{{ range $i, $sequence := (seq 0 3 (len $sponsors)) }}
+		{{ $e := index $sponsors $sequence }}
+
+		<div class="row text-center d-flex flex-wrap align-items-center mb-3">
+			<div class="col-md-4">
+				{{ if $e.logo }}
+					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
+				{{ else }}
+					<h3>{{$e.name}}</h3>
+				{{ end }}
+			</div>
+			<div class="col-md-4">
+				{{ $e = index $sponsors (add $sequence 1) }}
+				{{ if $e.logo }}
+					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
+				{{ else }}
+					<h3>{{$e.name}}</h3>
+				{{ end }}
+			</div>
+			<div class="col-md-4">
+				{{ $e = index $sponsors (add $sequence 2) }}
+				{{ if $e.logo }}
+					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
+				{{ else }}
+					<h3>{{$e.name}}</h3>
+				{{ end }}
+			</div>
 		</div>
-		<div class="col">
-			<img src="sponsors-microsoft.png" alt="Microsoft" class="img-fluid" />
-		</div>
-		<div class="col">
-			<img src="sponsors-first.png" alt="First" class="img-fluid" width="50%" height="50%" />
-		</div>
-	</div>
-	<div class="row text-center d-flex flex-wrap align-items-center mb-3">
-		<div class="col">
-			<img src="sponsors-pq-systems.png" alt="PQ Systems" class="img-fluid" />
-		</div>
-		<div class="col">
-			<img src="sponsors-action-athletics.png" alt="Action Athletics" class="img-fluid" width="50%" height="50%" />
-		</div>
-		<div class="col">
-			<img src="sponsors-first-broadband.png" alt="First Broadband" class="img-fluid" />
-		</div>
-	</div>
-	<div class="row text-center d-flex flex-wrap align-items-center mb-3">
-		<div class="col">
-			<h3>East End Boys Club</h3>
-		</div>
-		<div class="col">
-			<h3>Hon. Shane Simpson, MLA</h3>
-		</div>
-		<div class="col">
-			<h3>Mr. Peter Saunders</h3>
-		</div>
-	</div>
-	<div class="row text-center d-flex flex-wrap align-items-center">
-		<div class="col">
-			<h3>Mr. Kent Yuen</h3>
-		</div>
-		<div class="col">
-			<h3>Mr. Rudolph Chiang</h3>
-		</div>
-		<div class="col">
-			<h3>Dr. Damon Tedford</h3>
-		</div>
-	</div>
+	{{ end }}
 </div>
