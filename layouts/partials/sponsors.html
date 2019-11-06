@@ -9,29 +9,16 @@
 		{{ $e := index $sponsors $sequence }}
 
 		<div class="row text-center d-flex flex-wrap align-items-center mb-3">
-			<div class="col-md-4">
-				{{ if $e.logo }}
-					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
-				{{ else }}
-					<h3>{{$e.name}}</h3>
-				{{ end }}
-			</div>
-			<div class="col-md-4">
-				{{ $e = index $sponsors (add $sequence 1) }}
-				{{ if $e.logo }}
-					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
-				{{ else }}
-					<h3>{{$e.name}}</h3>
-				{{ end }}
-			</div>
-			<div class="col-md-4">
-				{{ $e = index $sponsors (add $sequence 2) }}
-				{{ if $e.logo }}
-					<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
-				{{ else }}
-					<h3>{{$e.name}}</h3>
-				{{ end }}
-			</div>
+			{{ range $j, $_ := (seq 3) }}
+				<div class="col-md-4">
+					{{ $e = index $sponsors (add $sequence $j) }}
+					{{ if $e.logo }}
+						<img src={{$e.logo}} alt={{$e.name}} class="img-fluid">
+					{{ else }}
+						<h3>{{$e.name}}</h3>
+					{{ end }}
+				</div>
+			{{ end }}
 		</div>
 	{{ end }}
 </div>
