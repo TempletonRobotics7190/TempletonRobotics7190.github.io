@@ -8,7 +8,7 @@
 
 	<style>
 		.hero {
-			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ .Params.images.hero}}");
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("{{ .Site.Data.images.hero}}");
 			background-size: cover;
 		}
 	</style>
@@ -25,16 +25,16 @@
 
 				<div class="row">
 					<div class="col">
-						<a href="{{ .Params.frc_link }}"><button type="button" class="btn btn-primary btn-block">FRC Team: 7190</button></a>
+						<a href="{{ .Site.Data.links.frc }}"><button type="button" class="btn btn-primary btn-block">FRC Team: 7190</button></a>
 					</div>
 					<div class="col">
-						<a href="{{ .Params.vex_link }}"><button type="button" class="btn btn-primary btn-block">VEX Team: 34777A</button></a>
+						<a href="{{ .Site.Data.links.vex }}"><button type="button" class="btn btn-primary btn-block">VEX Team: 34777A</button></a>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col">
-						<a href="{{ .Params.donate_link }}"><button type="button" class="btn btn-info btn-block mt-3">Donate</button></a>
+						<a href="{{ .Site.Data.links.donate }}"><button type="button" class="btn btn-info btn-block mt-3">Donate</button></a>
 					</div>
 				</div>
 			</div>
@@ -46,7 +46,7 @@
 		<h2 class="title">About Us</h2>
 		<div class="row">
 			<div class="col-md-6">
-				<img src="{{ .Params.images.about}}" alt="Team Photo" class="img-fluid" />
+				<img src="{{ .Site.Data.images.about}}" alt="Team Photo" class="img-fluid" />
 			</div>
 			<div class="col-md-6">
 				<p class="lead">{{ .Content }}</p>
