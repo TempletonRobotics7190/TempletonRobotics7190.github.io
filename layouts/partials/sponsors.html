@@ -2,8 +2,7 @@
 <div class="container">
 	<h2 class="title">Our Wonderful Sponsors!</h2>
 
-
-	{{ $sponsors := .Params.sponsors }}
+	{{ $sponsors := .Site.Data.sponsors }}
 
 	{{ range $i, $sequence := (seq 0 3 (len $sponsors)) }}
 		{{ $e := index $sponsors $sequence }}
