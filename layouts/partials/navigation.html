@@ -12,12 +12,12 @@
 			</li>
 
 			{{ range .Site.Sections }}
-				{{ $title := index (split .Title "|") 1 }}
-				{{ $parsedPage := trim (lower $title) " " }}
+				{{ $title := trim (index (split .Title "|") 1) " " }}
+				{{ $parsedPage := lower $title }}
 				{{ $isCurrentPage := in $currentPage $parsedPage }}
 
 					<li class="nav-item {{ if $isCurrentPage }}active{{ end }}">
-						<a href="{{ .RelPermalink }}" class="nav-link">{{ index (split .Title "|") 1 }}</a>
+						<a href="{{ .RelPermalink }}" class="nav-link">{{ $title }}</a>
 					</li>
 			{{ end }}
 		</ul>
