@@ -6,10 +6,10 @@
 			{{ range $j, $_ := (seq 2) }}
 				{{ $e := index $robots (add $sequence $j) }}
 
-				{{ with $e.name }}
+				{{ with $e }}
 					<div class="col-md-6">
 						<div class="card">
-							{{ if not (eq $e.image "") }}
+							{{ with $e.image }}
 								<img src={{$e.image}} alt="Image for {{$e.name}}" class="card-img-top">
 							{{ end }}
 							<div class="card-body">
