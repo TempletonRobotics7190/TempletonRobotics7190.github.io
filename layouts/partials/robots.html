@@ -1,0 +1,25 @@
+<div class="container">
+	{{ $robots := .Site.Data.robots }}
+
+	{{ range $i, $sequence := (seq 0 2 (len $robots)) }}
+		<div class="row mt-3">
+			{{ range $j, $_ := (seq 2) }}
+				{{ $e := index $robots (add $sequence $j) }}
+
+				{{ with $e.name }}
+					<div class="col-md-6">
+						<div class="card">
+							{{ if not (eq $e.image "") }}
+								<img src={{$e.image}} alt="Image for {{$e.name}}" class="card-img-top">
+							{{ end }}
+							<div class="card-body">
+								<h5 class="card-title">{{$e.name}} <small>{{$e.year}}</small></h5>
+								<p class="card-text">{{$e.description}}</p>
+							</div>
+						</div>
+					</div>
+				{{ end }}
+			{{ end }}
+		</div>
+	{{ end }}
+</div>
