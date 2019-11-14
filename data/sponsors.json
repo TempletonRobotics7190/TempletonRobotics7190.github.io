@@ -1,27 +1,27 @@
 [
 	{
 		"name": "Hatch",
-		"logo": "sponsors-hatch.png"
+		"logo": "/images/sponsors-hatch.png"
 	},
 	{
 		"name": "Microsoft",
-		"logo": "sponsors-microsoft.png"
+		"logo": "/images/sponsors-microsoft.png"
 	},
 	{
 		"name": "FIRST",
-		"logo": "sponsors-first.png"
+		"logo": "/images/sponsors-first.png"
 	},
 	{
 		"name": "PQ Systems",
-		"logo": "sponsors-pq-systems.png"
+		"logo": "/images/sponsors-pq-systems.png"
 	},
 	{
 		"name": "Action Athletic Wear",
-		"logo": "sponsors-action-athletics.png"
+		"logo": "/images/sponsors-action-athletics.png"
 	},
 	{
 		"name": "First Broadband",
-		"logo": "sponsors-first-broadband.png"
+		"logo": "/images/sponsors-first-broadband.png"
 	},
 	{
 		"name": "East End Boys Club"

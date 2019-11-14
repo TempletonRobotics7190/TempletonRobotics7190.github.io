@@ -1,8 +1,4 @@
 {
 	"languageCode": "en-us",
-	"title": "Templeton Robotics",
-	"staticDir": [
-		"static/images",
-		"static/css"
-	]
+	"title": "Templeton Robotics"
 }

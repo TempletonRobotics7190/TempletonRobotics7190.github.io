@@ -1,4 +1,4 @@
 {
-	"hero": "hero-background.jpg",
-	"about": "about-image.jpg"
+	"hero": "/images/hero-background.jpg",
+	"about": "/images/about-image.jpg"
 }
