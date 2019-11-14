@@ -1,6 +1,25 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 	<div class="container">
-		<!-- Update with logo -->
 		<img src="/logo.png" width="35">
+
+		<ul class="navbar-nav">
+			{{ $currentPage := .RelPermalink }}
+
+			{{ $isHomePage := eq $currentPage "/" }}
+
+			<li class="nav-item {{ if $isHomePage }}active{{ end }}">
+				<a href="/" class="nav-link">Home</a>
+			</li>
+
+			{{ range .Site.Sections }}
+				{{ $title := index (split .Title "|") 1 }}
+				{{ $parsedPage := trim (lower $title) " " }}
+				{{ $isCurrentPage := in $currentPage $parsedPage }}
+
+					<li class="nav-item {{ if $isCurrentPage }}active{{ end }}">
+						<a href="{{ .RelPermalink }}" class="nav-link">{{ index (split .Title "|") 1 }}</a>
+					</li>
+			{{ end }}
+		</ul>
 	</div>
 </nav>
