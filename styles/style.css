@@ -1816,3 +1816,7 @@ select::-ms-expand {
 .sponsors-individual {
   font-size: 26px;
 }
+
+.robot-info {
+   padding-bottom: 40px;
+}
