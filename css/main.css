@@ -11,7 +11,7 @@ nav.rainstorms-dark {
 .rainstorms-hero {
     background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/background.JPG") no-repeat center center;
     background-size: cover;
-    height: 84vh;
+    height: 84vmin;
 }
 
 /* the image for the background of the about page's "hero" unit */
