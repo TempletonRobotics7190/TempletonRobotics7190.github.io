@@ -1,181 +1,138 @@
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta class="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Templeton Robotics</title>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
-    <meta name="theme-color" content="#ffffff"/>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-            crossorigin="anonymous"></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="/js/analytics.js"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-120503621-2');
-    </script>
-
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel='stylesheet' href='styles/style.css' />
-    <link rel='stylesheet' href='styles/child-page.css' />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:800,900|Raleway:300" rel="stylesheet">
-</head>x
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-<!-- Hero(extended) navbar -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+<!doctype html>
+<html lang="en">
+    <!-- if you just want to change the content of the website you don't have to worry about the head section (this section) -->
+    <head>
+        <!-- look up what utf-8 is if you are curious about this -->
+        <meta class="utf-8">
+        
+        <!-- makes the website play nice with mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- link to the bootstrap stylesheet (bootstrap is a framework for designing websites. for more info, go to getbootstrap.com) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+        <!-- link to the stylesheet (feel free to check that out too) -->
+        <link rel="stylesheet" href="css/main.css">
+        
+        <!-- icon-, tab- and mobile-related things (probably don't touch) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b9e">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#000000">
+        
+        <!-- title shown on a browser tab -->
+        <title>Templeton Robotics</title>
+    </head>
+    <!-- content of the about page (about.html) -->
+    <body>
+        <!-- navbar that collapses at the "md" breakpoint (when the screen is small) -->
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
+            <!-- our logo (which links to the home page) -->
+            <a class="navbar-brand" href="/"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
+            <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="index.html"><img src="images/logo.png" height="50"></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li> -->
-                <!--         <li class=""><a href="#">About</a></li>
-                        <li><a href="#">Donate</a></li> -->
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="/about.html">About</a></li>
-                <li><a href="robots.html">Robots</a></li>
-                <li><a href="contact.html">Contact/Donate</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<!-- Hero unit -->
-<div class="hero" id="top" style="background-image:url('images/about-header.jpg')">
-    <div class="hero__overlay hero__overlay--gradient"></div>
-    <div class="hero__mask"></div>
-    <div class="hero__inner">
-        <div class="container">
-            <div class="hero__content hero-small">
-                <div class="hero__content__inner" id='navConverter'>
-                    <h1 class="hero__title">About us</h1>
+            
+            <!-- the navbarContent that collapses at the "md" breakpoint to accomodate small screens -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
+                <ul class="navbar-nav ml-auto">
+                    <!-- these li (list items) make up the links in the navbar. the link with the class "active" is highlighted as the current page -->
+                    <li class="nav-item text-md-left text-right">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active text-md-left text-right">
+                        <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-md-left text-right">
+                        <a class="nav-link" href="robots.html">Robots</a>
+                    </li>
+                    <li class="nav-item text-md-left text-right">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item text-md-left text-right">
+                        <a class="btn btn-outline-primary" href="https://gf.me/u/vxbwha" target="_blank">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- the main content of this page -->
+        <main role="main">
+            <!-- the big templeton robotics "hero" unit at the top of the page -->
+            <div class="jumbotron jumbotron-fluid rainstorms-hero-about shadow" id="top">
+                <div class="container text-center my-5">
+                    <h1 class="text-light rainstorms-title rainstorms-hero-title">About Us</h1>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="container" id="about">
-    <div class="row">
-        <div class="col-sm-12">
-            <h2 class="about-subtitle">Who are we?</h2>
-            <p class="body-copy about-paragraph">
-                We are a team of 25+ high school students at Templeton Secondary, located in East Vancouver.
-                We are passionate about building robots and learning about engineering/STEM.
-                Our team participates in the First Robotics Competition. <br/> <br/>
-                Our club was founded in Nov. 2017.
-            </p>
-        </div>
-        <div class="col-sm-6">
-            <img src="images/home_gofundme.jpg" class="img-responsive about-image">
-        </div>
-        <div class="col-sm-6">
-            <img src="images/about-group-photo.jpg" class="img-responsive about-image">
-        </div>
-
-        <div class="col-sm-12">
-            <br/><br/>
-            <h2 class="about-subtitle">Our Story</h2>
-            <p class="body-copy about-paragraph">
-                In early November of 2017, a student by the name of Arsh Seth showed an interest in robotics.
-                New to the school and country, Arsh set out to meet people that also shared his interests.
-                Thanks to the supportive hand of one Mr. Warren Lloyd, a teacher at Templeton Secondary, Arsh was able to start an afterschool club.
-                Between the budget cuts and insufficient funds, it was a rocky start from the get-go.
-            </p>
-        </div>
-
-        <div class="col-sm-12">
-            <br/><br/>
-            <h2 class="about-subtitle">What is FRC?</h2>
-            <p class="body-copy about-paragraph">
-                The FIRST Robotics Competition (FRC) is an annual competition that brings together robotics teams from all around the world to compete with and against each other.
-                For every season, a challenge is set forth and each team is given six weeks to construct a functional robot in order to fulfill the challenge requirements.
-                Dubbed as the “hardest fun you’ll ever have,” FRC is a challenging and exciting opportunity for high school
-                students that not only teaches them the fundamental elements of technology but the experience of working in a microcosm of a small tech company. <br/><br/>
-                Templeton Robotics participates in FRC. <br/> <br/>
-                <a class="button button__accent" href="robots.html">See our robots!</a>
-            </p>
-        </div>
-    </div>
-</div>
-
-    <!-- Call To Action -->
-    <div class="cta cta--reverse">
-        <div class="container">
-            <div class="cta__inner">
-                <h2 class="cta__title">Donate to us!</h2>
-                <p class="cta__sub cta__sub--center">We need your help. </p>
-                <a href="https://gf.me/u/vxbwha" class="button button__accent">Donate</a>
+            
+            <!-- this is the about section of the about page -->
+            <div class="container my-5" id="about">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <h2 class="rainstorms-title">Who are we?</h2>
+                        <p class="rainstorms-paragraph">We are a team of 35+ high school students at Templeton Secondary, located in East Vancouver. 
+                            We are passionate about building robots and learning about engineering/STEM. 
+                            Our team participates in the First Robotics Competition.<br><br>
+                            Our club was founded in November of 2017.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-6 my-3 my-sm-0">
+                        <span class="h-100 d-flex justify-content-center align-items-center"><img class="img-fluid" src="images/home_gofundme.jpg"></span>
+                    </div>
+                    <div class="col-12 col-sm-6 my-3 my-sm-0">
+                        <span class="h-100 d-flex justify-content-center align-items-center"><img class="img-fluid" src="images/about-group-photo.jpg"></span>
+                    </div>
+                    <div class="col-12 mt-5">
+                        <h2 class="rainstorms-title">Our story</h2>
+                        <p class="rainstorms-paragraph">In early November of 2017, a student by the name of Arsh Seth showed an interest in robotics. 
+                            New to the school and country, Arsh set out to meet people that also shared his interests. 
+                            Thanks to the supportive hand of one Mr. Warren Lloyd, a teacher at Templeton Secondary, Arsh was able to start an afterschool club. 
+                            Between the budget cuts and insufficient funds, it was a rocky start from the get-go.
+                        </p>
+                    </div>
+                    <div class="col-12 my-4">
+                        <h2 class="rainstorms-title">What is FRC?</h2>
+                        <p class="rainstorms-paragraph">The FIRST Robotics Competition (FRC) is an annual competition that brings together 
+                            robotics teams from all around the world to compete with and against each other. 
+                            For every season, a challenge is set forth and each team is given six weeks to construct a functional robot in order
+                            to fulfill the challenge requirements. Dubbed as the “hardest fun you’ll ever have,” FRC is a challenging and exciting 
+                            opportunity for high school students that not only teaches them the fundamental elements of technology but the 
+                            experience of working in a microcosm of a small tech company.<br><br>
+                            Templeton Robotics participates in FRC.
+                        </p>
+                        <a class="btn btn-primary btn-lg my-3" href="robots.html">See our robots!</a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- Footer -->
-    <div class="footer footer--dark">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="#" class="footer__textLogo">Copyright &copy;
-                    <script type="text/javascript">
-                        var d = new Date()
-                        document.write(d.getFullYear())
-                    </script> Templeton Robotics</a>
-
-                <div class="footer__data">
-                    <div class="footer__data__item">
-                        <div class="footer__row">
-
+            
+            <!-- this is the call-to-action donate button -->
+            <div class="container-fluid rainstorms-gradient py-3" id="donate">
+                <div class="container text-light text-center my-5">
+                    <h2 class="rainstorms-title">Donate to Us!</h2>
+                    <p>We need your help.</p>
+                    <a class="btn btn-primary btn-lg my-3" href="https://gf.me/u/vxbwha" target="_blank">Donate</a>
+                </div>
+            </div>
+            
+            <!-- this is the footer -->
+            <footer class="container-fluid bg-dark text-light py-5">
+                <div class="container text-center text-sm-left">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <a href="https://www.github.com/Templeton7190/" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
+                            <p>© 2017-2020 Templeton Robotics</p>
                         </div>
-
                     </div>
                 </div>
-                <div class="footer__data__item">
-                    <div class="footer__row">
-
-                    </div>
-
-                    <div class="footer__row">
-
-                    </div>
-                </div>
-                <div class="footer__data__item">
-                    <div class="footer__row">
-                        <a href="https://github.com/TempletonRobotics7190" target="_blank" class="footer__link">GitHub</a>
-                    </div>
-                    <div class="footer__row">
-                        <a class="footer__link" href="mailto:templeton7190@gmail.com"> templeton7190(at)gmail.com </a>
-                    </div>
-                    <div class="footer__row">
-
-                    </div>
-                    <div class="footer__row">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src='js/app.js'></script>
-</body>
+            </footer>
+        </main>
+        <!-- links to javascript that bootstrap needs -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
 </html>

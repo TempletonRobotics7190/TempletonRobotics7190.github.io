@@ -1,7 +1,4 @@
-# Templeton Robotics Website
-Site for Templeton Robotics. 
+# Templeton Robotics
+site for templeton robotics
 
-To Do: 
-
-- 'featured on' section
-- improve description on homepage
+if you want to change something, looking through index.html would be a good start..
