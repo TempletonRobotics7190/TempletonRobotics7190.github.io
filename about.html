@@ -4,10 +4,10 @@
     <head>
         <!-- look up what utf-8 is if you are curious about this -->
         <meta class="utf-8">
-        
+
         <!-- makes the website play nice with mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="/js/analytics.js"></script>
         <script>
@@ -17,13 +17,13 @@
 
             gtag('config', 'UA-120503621-2');
         </script>
-        
+
         <!-- link to the bootstrap stylesheet (bootstrap is a framework for designing websites. for more info, go to getbootstrap.com) -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        
+
         <!-- link to the stylesheet (feel free to check that out too) -->
         <link rel="stylesheet" href="css/main.css">
-        
+
         <!-- icon-, tab- and mobile-related things (probably don't touch) -->
         <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -32,7 +32,7 @@
         <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b9e">
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="theme-color" content="#000000">
-        
+
         <!-- title shown on a browser tab -->
         <title>Templeton Robotics</title>
     </head>
@@ -46,7 +46,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- the navbarContent that collapses at the "md" breakpoint to accomodate small screens -->
             <div class="collapse navbar-collapse" id="navbarContent">
                 <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
@@ -78,19 +78,23 @@
                     <h1 class="text-light rainstorms-title rainstorms-hero-title">About Us</h1>
                 </div>
             </div>
-            
-            <!-- this is the about section of the about page -->
+
+            <!-- this is the about section of the about page. the "my" classes used here define the size of the vertical (y) margins. "mt" and "mb" are for the top and bottom margins, while "my" is for both at once -->
             <div class="container my-5" id="about">
                 <div class="row">
+                    <!-- the "col-12" here means that this will take up the full width (all 12 column portions) of the "row" it is encased in -->
                     <div class="col-12 mb-3">
                         <h2 class="rainstorms-title">Who are we?</h2>
-                        <p class="rainstorms-paragraph">We are a team of 35+ high school students at Templeton Secondary, located in East Vancouver. 
-                            We are passionate about building robots and learning about engineering/STEM. 
-                            Our team participates in the First Robotics Competition.<br><br>
-                            Our club was founded in November of 2017.
+                        <p class="rainstorms-paragraph">We are a large and diverse team of high school students, from grades 8 to 12, at East Vancouver's Templeton Secondary School.
+                            We are passionate about building robots and gaining experience in STEM, marketing and business.
+                            We have been participating in the First Robotics Competition since their 2018 season.<br><br>
+                            Templeton Robotics was founded in November of 2017.
                         </p>
                     </div>
+                    <!-- the "col-12 col-sm-6" on these photos means that they will each take up half of the width (6 out of 12 column portions) of the "row" on screens bigger than "sm" -->
                     <div class="col-12 col-sm-6 my-3 my-sm-0">
+                        <!-- getting these images the way they need to be takes a bit of wrangling. first, the images have to have the class "img-fluid" to fill their space properly, and then they need to be encased
+                            in a span which takes up the max height possible ("h-100") and uses display-flex ("d-flex") to center-align the images vertically and horizontally ("justify-content-center", "align-items-center") -->
                         <span class="h-100 d-flex justify-content-center align-items-center"><img class="img-fluid" src="images/home_gofundme.jpg"></span>
                     </div>
                     <div class="col-12 col-sm-6 my-3 my-sm-0">
@@ -98,18 +102,18 @@
                     </div>
                     <div class="col-12 mt-5">
                         <h2 class="rainstorms-title">Our story</h2>
-                        <p class="rainstorms-paragraph" id="pjoffset">In early November of 2017, a student by the name of Arsh Seth showed an interest in robotics. 
-                            New to the school and country, Arsh set out to meet people that also shared his interests. 
-                            Thanks to the supportive hand of one Mr. Warren Lloyd, a teacher at Templeton Secondary, Arsh was able to start an afterschool club. 
-                            Between the budget cuts and insufficient funds, it was a rocky start from the get-go.
+                        <p class="rainstorms-paragraph">In early November of 2017, a Templeton student by the name of Arsh Seth showed an interest in robotics.
+                            New to the school and country, Arsh set out to meet people that shared his interest.
+                            Thanks to the supportive hand of Mr. Warren Lloyd, a teacher at Templeton Secondary, Arsh was able to start an afterschool robotics club.
+                            <span id="pjoffset">Between</span> budget cuts, inexperience and insufficient funds, it was a rocky beginning.
                         </p>
                     </div>
                     <div class="col-12 my-4">
                         <h2 class="rainstorms-title">Puddle Jumper Robotics</h2>
                         <p class="rainstorms-paragraph">Puddle Jumper Robotics is the all-girls robotics team at Templeton Secondary School.
-                            We have created a new club with the goal of providing a safe and supportive space for girls and young women 
-                            to engage with robotics and technology.<br><br>
-                            This club was founded in September of 2020.
+                            We have created a new team with the goal of providing a safe and supportive space for girls and young women
+                            to engage with robotics, technology, business and marketing.<br><br>
+                            Puddle Jumper Robotics was founded in September of 2020.
                         </p>
                     </div>
                     <div class="col-12 col-sm-6 my-3 my-sm-0">
@@ -120,19 +124,19 @@
                     </div>
                     <div class="col-12 my-4">
                         <h2 class="rainstorms-title">What is FRC?</h2>
-                        <p class="rainstorms-paragraph">The FIRST Robotics Competition (FRC) is an annual competition that brings together 
-                            robotics teams from all around the world to compete with and against each other. 
-                            For every season, a challenge is set forth and each team is given six weeks to construct a functional robot in order
-                            to fulfill the challenge requirements. Dubbed as the “hardest fun you’ll ever have,” FRC is a challenging and exciting 
-                            opportunity for high school students that not only teaches them the fundamental elements of technology but the 
-                            experience of working in a microcosm of a small tech company.<br><br>
-                            Templeton Robotics participates in FRC.
+                        <p class="rainstorms-paragraph">The FIRST Robotics Competition (FRC) is an annual competition that brings together
+                            robotics teams from all around the world to compete against and co-operate with each other. Every season a challenge
+                            is put forward and each team is given a short time and limited resources to construct a functional robot that meets
+                            the strict requirements. According to FIRST, it's "as close to real-world engineering as a student can get". FRC
+                            is a challenging and exciting opportunity for high school students to learn about technology, express their creativity
+                            and gain experience in a work environment comparable to that of a small tech company.<br><br>
+                            Templeton Robotics participates in the FRC as Team 7190, the Vancouver Rainstorms.
                         </p>
                         <a class="btn btn-primary btn-lg my-3" href="robots.html">See our robots!</a>
                     </div>
                 </div>
             </div>
-            
+
             <!-- this is the call-to-action donate button -->
             <div class="container-fluid rainstorms-gradient py-3" id="donate">
                 <div class="container text-light text-center my-5">
@@ -141,19 +145,26 @@
                     <a class="btn btn-primary btn-lg my-3" href="https://gf.me/u/vxbwha" target="_blank">Donate</a>
                 </div>
             </div>
-            
+
             <!-- this is the footer -->
             <footer class="container-fluid bg-dark text-light py-5">
+                <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
                 <div class="container text-center text-sm-left">
                     <div class="row">
                         <div class="col-12 col-sm-4">
+                            <!-- the logo image here links to our code on github -->
                             <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
-                            <p>© 2017-2020 Templeton Robotics</p>
+                            <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
+                            <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
                         </div>
                     </div>
                 </div>
             </footer>
         </main>
+        <!-- this script keeps the current year at the id "currentyear" up to date -->
+        <script>
+            document.getElementById('currentyear').innerHTML = new Date().getFullYear();
+        </script>
         <!-- links to javascript that bootstrap needs -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
