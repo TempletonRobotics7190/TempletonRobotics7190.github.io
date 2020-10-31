@@ -3,116 +3,124 @@
 
 /* the navbar color and bottom border of the old website */
 nav.rainstorms-dark {
-    background-color: #222;
-    border-bottom: 1px solid #080808;
+  background-color: #222;
+  border-bottom: 1px solid #080808;
 }
 
 /* the image for the background of the "hero" unit */
 .rainstorms-hero {
-    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/background.JPG") no-repeat center center;
-    background-size: cover;
-    height: auto;
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/background.JPG") no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 /* the image for the background of the about page's "hero" unit */
 .rainstorms-hero-about {
-    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/about-header.jpg") no-repeat center center;
-    background-size: cover;
-    height: auto;
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/about-header.jpg") no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 /* the image for the background of the robots page's "hero" unit */
 .rainstorms-hero-robots {
-    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/circuits.jpg") no-repeat center center;
-    background-size: cover;
-    height: auto;
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/circuits.jpg") no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 /* the image for the background of the robots page's "hero" unit */
 .rainstorms-hero-contact {
-    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/contact-header.jpg") no-repeat center center;
-    background-size: cover;
-    height: auto;
+  background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url("../images/contact-header.jpg") no-repeat center center;
+  background-size: cover;
+  height: auto;
 }
 
 /* the font for all titles */
 .rainstorms-title {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
 }
 
 /* the font size for the "hero" unit title */
 .rainstorms-hero-title {
-    font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 /* the larger-text paragraphs i.e. those on the about page */
 .rainstorms-paragraph {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 /* the divider used beneath some titles */
 .rainstorms-divider {
-    border-top: 5px solid #007bff;
-    width: 200px;
+  border-top: 5px solid #007bff;
+  width: 200px;
 }
 
 .rainstorms-divider.rainstorms-divider-small {
-    width: 50px;
+  width: 50px;
+}
+
+.rainstorms-divider.rainstorms-divider-medium {
+  width: 100px;
 }
 
 /* the background colour for some sections */
 .rainstorms-light {
-    background-color: #e9ecf2;
+  background-color: #e9ecf2;
 }
 
 /* the sizing for the video */
 div#video {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-div#video iframe, div#video object, div#video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+div#video iframe,
+div#video object,
+div#video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* and here for the map */
 div#map {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
+  position: relative;
+  padding-bottom: 25%; /* 56.25% */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
 }
 
-div#map iframe, div#map object, div#map embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+div#map iframe,
+div#map object,
+div#map embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* this is the gradient used for the donate section */
 .rainstorms-gradient {
-    background: linear-gradient(to left, #1d3966, #1d6661);
+  background: linear-gradient(to left, #1d3966, #1d6661);
 }
 
 /* this is a "breakpoint" that is used to apply different css under specified conditions (in this case this will only apply to screens less than 768 px wide) */
 @media (max-width: 767.98px) {
-    .rainstorms-hero-title {
-        font-size: 2.5rem;
-    }
+  .rainstorms-hero-title {
+    font-size: 2.5rem;
+  }
 }
 
 /* this is just used for the rare case that bootstrap breaks a widget */
 .override-box-sizing {
-    box-sizing: content-box;
+  box-sizing: content-box;
 }
