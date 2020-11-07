@@ -118,6 +118,10 @@ div#map embed {
   .rainstorms-hero-title {
     font-size: 2.5rem;
   }
+
+  div#map {
+    padding-bottom: 56.25%;
+  }
 }
 
 /* this is just used for the rare case that bootstrap breaks a widget */
