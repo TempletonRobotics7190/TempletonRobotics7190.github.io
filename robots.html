@@ -33,6 +33,9 @@
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="theme-color" content="#000000">
 
+        <!-- font awesome (an icon service) -->
+        <script src="https://kit.fontawesome.com/8441829b1d.js" crossorigin="anonymous"></script>
+
         <!-- title shown on a browser tab -->
         <title>Templeton Robotics</title>
     </head>
@@ -125,17 +128,17 @@
             </div>
 
             <!-- this is the footer -->
-            <footer class="container-fluid bg-dark text-light py-5">
+            <footer class="container-fluid rainstorms-dark text-light py-5">
                 <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
-                <div class="container text-center text-sm-left">
-                    <div class="row">
-                        <div class="col-12 col-sm-4">
-                            <!-- the logo image here links to our code on github -->
-                            <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
-                            <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
-                            <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
-                        </div>
+                <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+                    <!-- the logo image here links to our code on github -->
+                    <div class="d-flex align-items-center">
+                        <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy" title="Click to see our code"></a>
+                        <a href="https://instagram.com/templetonrobotics"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
+                        <a href="https://instagram.com/puddlejumpers7332"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
                     </div>
+                    <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
+                    <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
                 </div>
             </footer>
         </main>

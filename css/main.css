@@ -1,9 +1,13 @@
 /* the font for the templeton robotics title */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
-/* the navbar color and bottom border of the old website */
-nav.rainstorms-dark {
+/* the navbar colour of the old website */
+.rainstorms-dark {
   background-color: #222;
+}
+
+/* the navbar bottom border of the old website */
+nav.rainstorms-dark {
   border-bottom: 1px solid #080808;
 }
 
@@ -49,6 +53,11 @@ nav.rainstorms-dark {
 /* the larger-text paragraphs i.e. those on the about page */
 .rainstorms-paragraph {
   font-size: 1.2rem;
+}
+
+/* color for the light icons */
+.rainstorms-icon-light {
+  color: #e9ecf2;
 }
 
 /* the divider used beneath some titles */

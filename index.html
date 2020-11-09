@@ -33,6 +33,9 @@
         <meta name="msapplication-TileColor" content="#2b5797">
         <meta name="theme-color" content="#000000">
 
+        <!-- font awesome (an icon service) -->
+        <script src="https://kit.fontawesome.com/8441829b1d.js" crossorigin="anonymous"></script>
+
         <!-- title shown on a browser tab -->
         <title>Templeton Robotics</title>
     </head>
@@ -186,8 +189,9 @@
                         Vancouver, BC V5L 4N8<br>
                         Canada<br>
                         Phone: (604) 713-8984<br>
-                        <!-- together with a script found below, this "mungs" our email address to make it harder for bots to scrape it and spam us -->
-                        <strong>Email:</strong> <span id="email"></span><span class="sr-only">templeton seven one ninety at gmail dot com</span>
+                        <!-- together with a script found below, this "mungs" our email addresses to make it harder for bots to scrape them and spam us -->
+                        <strong>Email (7190):</strong> <span id="7190email"></span><span class="sr-only">templeton seven one ninety at gmail dot com</span><br>
+                        <strong>Email (7332):</strong> <span id="7332email"></span><span class="sr-only">ef are see seven three thirty two at gmail dot com</span>
                     </p>
                     <div id="map">
                         <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9012282799977!2d-123.06263008478176!3d49.27826877900513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486713d383ee161%3A0x9da2ff4354499bd2!2sTempleton%20Secondary%20School!5e0!3m2!1sen!2sca!4v1601903514953!5m2!1sen!2sca' width='600' height='450' frameborder='0' style='border:0'></iframe>
@@ -206,28 +210,30 @@
             </div>
 
             <!-- this is the footer -->
-            <footer class="container-fluid bg-dark text-light py-5">
+            <footer class="container-fluid rainstorms-dark text-light py-5">
                 <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
-                <div class="container text-center text-sm-left">
-                    <div class="row">
-                        <div class="col-12 col-sm-4">
-                            <!-- the logo image here links to our code on github -->
-                            <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
-                            <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
-                            <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
-                        </div>
+                <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+                    <!-- the logo image here links to our code on github -->
+                    <div class="d-flex align-items-center">
+                        <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy" title="Click to see our code"></a>
+                        <a href="https://instagram.com/templetonrobotics"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
+                        <a href="https://instagram.com/puddlejumpers7332"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
                     </div>
+                    <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
+                    <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
                 </div>
             </footer>
         </main>
         <!-- script to piece together the email address so it can be copy-pasted. this supposedly stops bots from scraping it from the code and spamming us -->
         <script>
-            var templeton7190 = "templeton7190";
-            var at = "@"
-            var gmail = "gmail"
-            var dot = "."
-            var com = "com"
-            document.getElementById('email').innerHTML = (templeton7190 + at + gmail + dot + com)
+            var name7190 = "templeton7190";
+            var name7332 = "frc7332";
+            var at = "@";
+            var site = "gmail";
+            var dot = ".";
+            var com = "com";
+            document.getElementById('7190email').innerHTML = (name7190 + at + site + dot + com);
+            document.getElementById('7332email').innerHTML = (name7332 + at + site + dot + com);
         </script>
         <!-- this script keeps the current year at the id "currentyear" up to date -->
         <script>
