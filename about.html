@@ -43,8 +43,9 @@
     <body>
         <!-- navbar that collapses at the "md" breakpoint (when the screen is small) -->
         <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
-            <!-- our logo (which links to the home page) -->
-            <a class="navbar-brand" href="/"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy"></a>
+            <!-- our logos (which link to the home page and the puddle jumpers section of the about page, respectively) -->
+            <a class="navbar-brand" href="/"><img src="images/logo.svg" height="50" alt="7190 Logo" loading="lazy"></a>
+            <a class="navbar-brand" href="about.html#pjoffset"><img src="images/logopj.svg" height="50" alt="7332 Logo" loading="lazy"></a>
             <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -155,11 +156,11 @@
             <footer class="container-fluid rainstorms-dark text-light py-5">
                 <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
                 <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
-                    <!-- the logo image here links to our code on github -->
+                    <!-- links to our code on github as well as our instagram pages -->
                     <div class="d-flex align-items-center">
-                        <a href="https://github.com/TempletonRobotics7190" target="_blank"><img src="images/logo.png" height="50" alt="7190 Logo" loading="lazy" title="Click to see our code"></a>
-                        <a href="https://instagram.com/templetonrobotics"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
-                        <a href="https://instagram.com/puddlejumpers7332"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
+                        <a href="https://github.com/TempletonRobotics7190" target="_blank"><i class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="Code"></i></a>
+                        <a href="https://instagram.com/templetonrobotics" target="_blank"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
+                        <a href="https://instagram.com/puddlejumpers7332" target="_blank"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
                     </div>
                     <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
                     <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
