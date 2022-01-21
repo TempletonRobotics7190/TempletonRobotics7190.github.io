@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <!-- if you just want to change the content of the website you don't have to worry about the head section (this section) -->
+    <head>
+        <!-- look up what utf-8 is if you are curious about this -->
+        <meta class="utf-8">
+
+        <!-- makes the website play nice with mobile devices -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="/js/analytics.js"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-120503621-2');
+        </script>
+
+        <!-- link to the bootstrap stylesheet (bootstrap is a framework for designing websites. for more info, go to getbootstrap.com) -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- link to the stylesheet (feel free to check that out too) -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- icon-, tab- and mobile-related things (probably don't touch) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b9e">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#000000">
+
+        <!-- font awesome (an icon service) -->
+        <script src="https://kit.fontawesome.com/8441829b1d.js" crossorigin="anonymous"></script>
+
+        <!-- title shown on a browser tab -->
+        <title>Templeton Robotics</title>
+    </head>
+
+    <body>
+      <!-- navbar that collapses at the "md" breakpoint (when the screen is small) -->
+      <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
+        <!-- our logos (which link to the home page and the puddle jumpers section of the about page, respectively) -->
+        <a class="navbar-brand" href="/"><img src="images/logo.svg" height="50" alt="7190 Logo" loading="lazy"></a>
+        <a class="navbar-brand" href="about.html#pjoffset"><img src="images/logopj.svg" height="50" alt="7332 Logo" loading="lazy"></a>
+        <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- the navbarContent that collapses at the "md" breakpoint to accomodate small screens -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
+            <ul class="navbar-nav ml-auto">
+                <!-- these li (list items) make up the links in the navbar. the link with the class "active" is highlighted as the current page -->
+                <li class="nav-item text-md-left text-right">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active text-md-left text-right">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item text-md-left text-right">
+                    <a class="nav-link" href="robots.html">Robots</a>
+                </li>
+                <li class="nav-item text-md-left text-right">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item text-md-left text-right">
+                    <a class="btn btn-outline-primary" href="#donate">Donate</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- the main content of this page -->
+    <main role="main">
+        <!-- the big templeton robotics "hero" unit at the top of the page -->
+        <div class="jumbotron jumbotron-fluid rainstorms-hero-teams shadow" id="top">
+            <div class="container text-center my-5">
+                <h1 class="text-light rainstorms-title rainstorms-hero-title">The Teams!</h1>
+            </div>
+        </div>
+
+        <div class="container text-center my-5" id="sponsors">
+            <div class="row">
+                <div class="col-sm-3 my-3">
+                    <h3 style="font-size:50px"><b>Build</b></h3>
+                </div>
+                <div class="col-sm-3 my-3">
+                    <h3 style="font-size:50px"><b>Code</b></h3>
+                </div>
+                <div class="col-sm-3 my-3">
+                    <h3 style="font-size:50px"><b>Sponsor</b></h3>
+                </div>
+                <div class="col-sm-3 my-3">
+                    <h3 style="font-size:50px"><b>Design</b></h3>
+                </div>
+            </div>
+            <hr class="rainstorms-divider mb-5">
+        </div>
+    </body>
