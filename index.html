@@ -1,412 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- if you just want to change the content of the website you don't have to worry about the head section (this section) -->
-  <head>
-    <!-- look up what utf-8 is if you are curious about this -->
-    <meta class="utf-8" />
+<!-- if you just want to change the content of the website you don't have to worry about the head section (this section) -->
 
-    <!-- makes the website play nice with mobile devices -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<head>
+  <!-- look up what utf-8 is if you are curious about this -->
+  <meta class="utf-8" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="/js/analytics.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- makes the website play nice with mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-      gtag("config", "UA-120503621-2");
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="/js/analytics.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <!-- link to the bootstrap stylesheet (bootstrap is a framework for designing websites. for more info, go to getbootstrap.com) -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+    gtag("config", "UA-120503621-2");
+  </script>
 
-    <!-- link to the stylesheet (feel free to check that out too) -->
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- link to the bootstrap stylesheet (bootstrap is a framework for designing websites. for more info, go to getbootstrap.com) -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
 
-    <!-- icon-, tab- and mobile-related things (probably don't touch) -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b9e" />
-    <meta name="msapplication-TileColor" content="#2b5797" />
-    <meta name="theme-color" content="#000000" />
+  <!-- link to the stylesheet (feel free to check that out too) -->
+  <link rel="stylesheet" href="css/main.css" />
 
-    <!-- font awesome (an icon service) -->
-    <script
-      src="https://kit.fontawesome.com/8441829b1d.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- icon-, tab- and mobile-related things (probably don't touch) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#007b9e" />
+  <meta name="msapplication-TileColor" content="#2b5797" />
+  <meta name="theme-color" content="#000000" />
 
-    <!-- title shown on a browser tab -->
-    <title>Templeton Robotics</title>
-  </head>
-  <!-- content of the main page (index.html) -->
-  <body>
-    <!-- navbar that collapses at the "md" breakpoint (when the screen is small) -->
-    <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
-      <!-- our logos (which link to the home page and the puddle jumpers section of the about page, respectively) -->
-      <a class="navbar-brand" href="/"
-        ><img src="images/logo.svg" height="50" alt="7190 Logo" loading="lazy"
-      /></a>
-      <a class="navbar-brand" href="about.html#pjoffset"
-        ><img
-          src="images/logopj.svg"
-          height="50"
-          alt="7332 Logo"
-          loading="lazy"
-      /></a>
-      <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- font awesome (an icon service) -->
+  <script src="https://kit.fontawesome.com/8441829b1d.js" crossorigin="anonymous"></script>
 
-      <!-- the navbarContent that collapses at the "md" breakpoint to accomodate small screens -->
-      <div class="collapse navbar-collapse" id="navbarContent">
-        <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
-        <ul class="navbar-nav ml-auto">
-          <!-- these li (list items) make up the links in the navbar. the link with the class "active" is highlighted as the current page -->
-          <li class="nav-item active text-md-left text-right">
-            <a class="nav-link" href="/"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item text-md-left text-right">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item text-md-left text-right">
-            <a class="nav-link" href="robots.html">Robots</a>
-          </li>
-          <li class="nav-item text-md-left text-right">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item text-md-left text-right">
-            <a class="btn btn-outline-primary" href="#donate">Donate</a>
-          </li>
-        </ul>
+  <!-- title shown on a browser tab -->
+  <title>Templeton Robotics</title>
+</head>
+<!-- content of the main page (index.html) -->
+
+<body>
+  <!-- navbar that collapses at the "md" breakpoint (when the screen is small) -->
+  <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
+    <!-- our logos (which link to the home page and the puddle jumpers section of the about page, respectively) -->
+    <a class="navbar-brand" href="/"><img src="images/logo.svg" height="50" alt="7190 Logo" loading="lazy" /></a>
+    <a class="navbar-brand" href="about.html#pjoffset"><img src="images/logopj.svg" height="50" alt="7332 Logo"
+        loading="lazy" /></a>
+    <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- the navbarContent that collapses at the "md" breakpoint to accomodate small screens -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
+      <ul class="navbar-nav ml-auto">
+        <!-- these li (list items) make up the links in the navbar. the link with the class "active" is highlighted as the current page -->
+        <li class="nav-item active text-md-left text-right">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item text-md-left text-right">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item text-md-left text-right">
+          <a class="nav-link" href="robots.html">Robots</a>
+        </li>
+        <li class="nav-item text-md-left text-right">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item text-md-left text-right">
+          <a class="btn btn-outline-primary" href="#donate">Donate</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- the main content of this page -->
+  <main role="main">
+    <!-- the big templeton robotics "hero" unit at the top of the page -->
+    <div class="jumbotron jumbotron-fluid rainstorms-hero shadow" id="top">
+      <div class="container text-center py-4">
+        <!-- larger-scaled logos that display in the center of the hero unit -->
+        <img src="images/logo.svg" height="100" />
+        <img src="images/logopj.svg" height="100" />
+        <h1 class="text-light rainstorms-title rainstorms-hero-title">
+          Templeton Robotics
+        </h1>
+        <!-- these two buttons (class: "btn") link to our about page and gofundme, in that order -->
+        <a class="btn btn-primary btn-lg my-3" href="about.html">About Us</a><br />
+        <a class="btn btn-primary btn-lg mt-3 mb-5" href="#donate">Donate</a>
       </div>
-    </nav>
-    <!-- the main content of this page -->
-    <main role="main">
-      <!-- the big templeton robotics "hero" unit at the top of the page -->
-      <div class="jumbotron jumbotron-fluid rainstorms-hero shadow" id="top">
-        <div class="container text-center py-4">
-          <!-- larger-scaled logos that display in the center of the hero unit -->
-          <img src="images/logo.svg" height="100" />
-          <img src="images/logopj.svg" height="100" />
-          <h1 class="text-light rainstorms-title rainstorms-hero-title">
-            Templeton Robotics
-          </h1>
-          <!-- these two buttons (class: "btn") link to our about page and gofundme, in that order -->
-          <a class="btn btn-primary btn-lg my-3" href="about.html">About Us</a
-          ><br />
-          <a class="btn btn-primary btn-lg mt-3 mb-5" href="#donate">Donate</a>
+    </div>
+
+    <!-- the sponsors section -->
+    <div class="container text-center my-5" id="sponsors">
+      <h2 class="rainstorms-title">Our Sponsors</h2>
+      <!-- this hr (horizontal rule) is styled to be blue, 5 px thick and 200 px wide (as per the class "rainstorms-divider" in the stylesheet) -->
+      <hr class="rainstorms-divider mb-5" />
+
+      <!-- this is the top row of sponsors. bootstrap spaces things horizontally in terms of portions of a column (up to 12), so if i want 3 columns to fill the screen i have to use 4 column portions per column ("col-4"; the "-sm" is a breakpoint which makes it display like this only on screens larger than "sm") -->
+      <div class="row">
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://www.hatch.com/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_hatch.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://www.microsoft.com/en-ca/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_microsoft.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://www.firstinspires.org/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_first.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://https://vanwit.ca/"
+            target="_blank"><img class="img-fluid" src="images/VanWIT.png" /></a>
         </div>
       </div>
+      <!-- this smaller hr inherits the properties of the larger one but shrinks the width to 50 px -->
+      <hr class="rainstorms-divider rainstorms-divider-small" />
 
-      <!-- the sponsors section -->
-      <div class="container text-center my-5" id="sponsors">
-        <h2 class="rainstorms-title">Our Sponsors</h2>
-        <!-- this hr (horizontal rule) is styled to be blue, 5 px thick and 200 px wide (as per the class "rainstorms-divider" in the stylesheet) -->
-        <hr class="rainstorms-divider mb-5" />
+      <!-- since these sponsors have to share 4 columns, each column now gets 3 column portions out of the 12 total ("col-3") -->
+      <div class="row">
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://www.pqsystemsltd.com/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_pq-control.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://actionathleticwear.com/"
+            target="_blank"><img class="w-50" src="images/sponsors_action-athletics.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://firstbroadbandgroup.com/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_first-broadband.png" /></a>
+        </div>
+        <div class="col-sm-3 my-3 my-sm-0">
+          <a class="h-100 d-flex justify-content-center align-items-center" href="https://www.leg.bc.ca/"
+            target="_blank"><img class="img-fluid" src="images/sponsors_shane-mla.png" /></a>
+        </div>
+      </div>
+      <hr class="rainstorms-divider rainstorms-divider-small" />
 
-        <!-- this is the top row of sponsors. bootstrap spaces things horizontally in terms of portions of a column (up to 12), so if i want 3 columns to fill the screen i have to use 4 column portions per column ("col-4"; the "-sm" is a breakpoint which makes it display like this only on screens larger than "sm") -->
+      <div class="row">
+        <div class="col-sm-3 my-3">
+          <h3>East End Boys Club</h3>
+        </div>
+        <div class="col-sm-3 my-3">
+          <h3>Mr. Peter Saunders</h3>
+        </div>
+        <div class="col-sm-3 my-3">
+          <h3>Mr. Kent Yuen</h3>
+        </div>
+        <div class="col-sm-3 my-3">
+          <h3>Mr. Rudolph Chiang</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- this is the short about blurb on the front page -->
+    <div class="container-fluid rainstorms-light py-3">
+      <div class="container text-center text-sm-left my-5" id="about">
+        <div class="row mb-0 mb-sm-5">
+          <div class="col-12 col-sm-6 my-3 my-sm-0">
+            <img src="images/tempjump.gif" width="100%" />
+          </div>
+          <div class="col-12 col-sm-6 my-3 my-sm-0">
+            <h2 class="rainstorms-title">About Us</h2>
+            <hr class="rainstorms-divider rainstorms-divider-small ml-sm-1" />
+            <p class="text-left px-2 px-sm-0">
+              We are a club of students from grades 8 to 12 at Templeton
+              Secondary, in East Van. We are enthusiastic learners who are
+              interested in STEM, business and marketing. We participate in
+              the FIRST Robotics Competition.<br /><br />Our club was founded
+              in Nov. 2017.
+            </p>
+            <a class="btn btn-primary btn-lg my-3" href="about.html">Learn More</a>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://www.hatch.com/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_hatch.png"
-            /></a>
+          <div class="col-12 col-sm-6 my-3 my-sm-0">
+            <img src="images/puddlejump.gif" width="100%" />
           </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://www.microsoft.com/en-ca/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_microsoft.png"
-            /></a>
-          </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://www.firstinspires.org/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_first.png"
-            /></a>
-          </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://https://vanwit.ca/"
-              target="_blank"
-              ><img class="img-fluid" src="images/VanWIT.png"
-            /></a>
-          </div>
-        </div>
-        <!-- this smaller hr inherits the properties of the larger one but shrinks the width to 50 px -->
-        <hr class="rainstorms-divider rainstorms-divider-small" />
-
-        <!-- since these sponsors have to share 4 columns, each column now gets 3 column portions out of the 12 total ("col-3") -->
-        <div class="row">
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://www.pqsystemsltd.com/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_pq-control.png"
-            /></a>
-          </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://actionathleticwear.com/"
-              target="_blank"
-              ><img class="w-50" src="images/sponsors_action-athletics.png"
-            /></a>
-          </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://firstbroadbandgroup.com/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_first-broadband.png"
-            /></a>
-          </div>
-          <div class="col-sm-3 my-3 my-sm-0">
-            <a
-              class="h-100 d-flex justify-content-center align-items-center"
-              href="https://www.leg.bc.ca/"
-              target="_blank"
-              ><img class="img-fluid" src="images/sponsors_shane-mla.png"
-            /></a>
-          </div>
-        </div>
-        <hr class="rainstorms-divider rainstorms-divider-small" />
-
-        <div class="row">
-          <div class="col-sm-3 my-3">
-            <h3>East End Boys Club</h3>
-          </div>
-          <div class="col-sm-3 my-3">
-            <h3>Mr. Peter Saunders</h3>
-          </div>
-          <div class="col-sm-3 my-3">
-            <h3>Mr. Kent Yuen</h3>
-          </div>
-          <div class="col-sm-3 my-3">
-            <h3>Mr. Rudolph Chiang</h3>
+          <div class="col-12 col-sm-6 my-3 my-sm-0">
+            <h2 class="rainstorms-title">The Puddle Jumpers</h2>
+            <hr class="rainstorms-divider rainstorms-divider-small ml-sm-1" />
+            <p class="text-left px-2 px-sm-0">
+              The Puddle Jumpers are the all-women robotics team within the
+              Templeton Robotics Club. <br /><br />This team was registered in
+              Sept. 2020.
+            </p>
+            <a class="btn btn-primary btn-lg my-3" href="about.html#pjoffset">More Info</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- this is the short about blurb on the front page -->
-      <div class="container-fluid rainstorms-light py-3">
-        <div class="container text-center text-sm-left my-5" id="about">
-          <div class="row mb-0 mb-sm-5">
-            <div class="col-12 col-sm-6 my-3 my-sm-0">
-              <img src="images/tempjump.gif" width="100%" />
-            </div>
-            <div class="col-12 col-sm-6 my-3 my-sm-0">
-              <h2 class="rainstorms-title">About Us</h2>
-              <hr class="rainstorms-divider rainstorms-divider-small ml-sm-1" />
-              <p class="text-left px-2 px-sm-0">
-                We are a club of students from grades 8 to 12 at Templeton
-                Secondary, in East Van. We are enthusiastic learners who are
-                interested in STEM, business and marketing. We participate in
-                the FIRST Robotics Competition.<br /><br />Our club was founded
-                in Nov. 2017.
-              </p>
-              <a class="btn btn-primary btn-lg my-3" href="about.html"
-                >Learn More</a
-              >
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 my-3 my-sm-0">
-              <img src="images/puddlejump.gif" width="100%" />
-            </div>
-            <div class="col-12 col-sm-6 my-3 my-sm-0">
-              <h2 class="rainstorms-title">The Puddle Jumpers</h2>
-              <hr class="rainstorms-divider rainstorms-divider-small ml-sm-1" />
-              <p class="text-left px-2 px-sm-0">
-                The Puddle Jumpers are the all-women robotics team within the
-                Templeton Robotics Club. <br /><br />This team was registered in
-                Sept. 2020.
-              </p>
-              <a class="btn btn-primary btn-lg my-3" href="about.html#pjoffset"
-                >More Info</a
-              >
-            </div>
-          </div>
-        </div>
+    <!-- this is the embedded youtube video. if you want to replace it just replace the src="" part or risk breaking the sizing -->
+    <div class="container text-center my-5">
+      <h1 class="rainstorms-title">7190's first year teaser trailer.</h1>
+      <div id="video">
+        <iframe src="https://www.youtube.com/embed/sEiVmOdmyaE" frameborder="0" allowfullscreen></iframe>
       </div>
-
-      <!-- this is the embedded youtube video. if you want to replace it just replace the src="" part or risk breaking the sizing -->
+    </div>
+    <!-- this is the directions to the school as well as the embedded map. i'm not sure why you'd need to change this -->
+    <div class="container-fluid rainstorms-light py-3" id="directions">
       <div class="container text-center my-5">
-        <h1 class="rainstorms-title">7190's first year teaser trailer.</h1>
-        <div id="video">
+        <h2 class="rainstorms-title">Directions</h2>
+        <hr class="rainstorms-divider" />
+        <p class="mb-5">
+          <strong>We are located at:</strong><br />
+          727 Templeton Dr.<br />
+          Vancouver, BC V5L 4N8<br />
+          Canada<br />
+          Phone: (604) 713-8984<br />
+          <!-- together with a script found below, this "mungs" our email addresses to make it harder for bots to scrape them and spam us -->
+          <strong>Email (7190):</strong> <span id="7190email"></span><span class="sr-only">templeton seven one ninety at
+            gmail dot com</span><br />
+          <strong>Email (7332):</strong> <span id="7332email"></span><span class="sr-only">ef are see seven three thirty
+            two at gmail dot com</span>
+        </p>
+        <div id="map">
           <iframe
-            src="https://www.youtube.com/embed/sEiVmOdmyaE"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9012282799977!2d-123.06263008478176!3d49.27826877900513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486713d383ee161%3A0x9da2ff4354499bd2!2sTempleton%20Secondary%20School!5e0!3m2!1sen!2sca!4v1601903514953!5m2!1sen!2sca"
+            width="600" height="450" frameborder="0" style="border: 0"></iframe>
         </div>
       </div>
-      <!-- this is the directions to the school as well as the embedded map. i'm not sure why you'd need to change this -->
-      <div class="container-fluid rainstorms-light py-3" id="directions">
-        <div class="container text-center my-5">
-          <h2 class="rainstorms-title">Directions</h2>
-          <hr class="rainstorms-divider" />
-          <p class="mb-5">
-            <strong>We are located at:</strong><br />
-            727 Templeton Dr.<br />
-            Vancouver, BC V5L 4N8<br />
-            Canada<br />
-            Phone: (604) 713-8984<br />
-            <!-- together with a script found below, this "mungs" our email addresses to make it harder for bots to scrape them and spam us -->
-            <strong>Email (7190):</strong> <span id="7190email"></span
-            ><span class="sr-only"
-              >templeton seven one ninety at gmail dot com</span
-            ><br />
-            <strong>Email (7332):</strong> <span id="7332email"></span
-            ><span class="sr-only"
-              >ef are see seven three thirty two at gmail dot com</span
-            >
-          </p>
-          <div id="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.9012282799977!2d-123.06263008478176!3d49.27826877900513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486713d383ee161%3A0x9da2ff4354499bd2!2sTempleton%20Secondary%20School!5e0!3m2!1sen!2sca!4v1601903514953!5m2!1sen!2sca"
-              width="600"
-              height="450"
-              frameborder="0"
-              style="border: 0"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+    </div>
 
-      <!-- this is the call-to-action donate button -->
-      <div class="container-fluid rainstorms-gradient py-3" id="donate">
-        <div class="container text-light text-center my-5">
-          <h2 class="rainstorms-title">Donate to Us!</h2>
-          <p>We need your help.</p>
-          <a
-            class="btn btn-primary btn-lg my-3"
-            href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
-            target="_blank"
-            >Donate (Vancouver Rainstorms)</a
-          >
-          <a
-            class="btn btn-primary btn-lg my-3"
-            href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
-            target="_blank"
-            >Donate (Puddle Jumpers)</a
-          >
-        </div>
+    <!-- this is the call-to-action donate button -->
+    <div class="container-fluid rainstorms-gradient py-3" id="donate">
+      <div class="container text-light text-center my-5">
+        <h2 class="rainstorms-title">Donate to Us!</h2>
+        <p>We need your help.</p>
+        <a class="btn btn-primary btn-lg my-3"
+          href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
+          target="_blank">Donate (Vancouver Rainstorms)</a>
+        <a class="btn btn-primary btn-lg my-3"
+          href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
+          target="_blank">Donate (Puddle Jumpers)</a>
       </div>
+    </div>
 
-      <!-- this is the footer -->
-      <footer class="container-fluid rainstorms-dark text-light py-5">
-        <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
-        <div
-          class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block"
-        >
-          <!-- links to our code on github as well as our instagram pages -->
-          <div class="d-flex align-items-center">
-            <a href="https://github.com/TempletonRobotics7190" target="_blank"
-              ><i
-                class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3"
-                title="Code"
-              ></i
-            ></a>
-            <a href="https://instagram.com/templetonrobotics" target="_blank"
-              ><i
-                class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3"
-                title="7190"
-              ></i
-            ></a>
-            <a
-              href="https://instagram.com/puddlejumper_robotics/"
-              target="_blank"
-              ><i
-                class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3"
-                title="7332"
-              ></i
-            ></a>
-          </div>
-          <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
-          <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
+    <!-- this is the footer -->
+    <footer class="container-fluid rainstorms-dark text-light py-5">
+      <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
+      <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+        <!-- links to our code on github as well as our instagram pages -->
+        <div class="d-flex align-items-center">
+          <a href="https://github.com/TempletonRobotics7190" target="_blank"><i
+              class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="Code"></i></a>
+          <a href="https://instagram.com/templetonrobotics" target="_blank"><i
+              class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
+          <a href="https://instagram.com/puddlejumper_robotics/" target="_blank"><i
+              class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
         </div>
-      </footer>
-    </main>
-    <!-- script to piece together the email address so it can be copy-pasted. this supposedly stops bots from scraping it from the code and spamming us -->
-    <script>
-      var name7190 = "templeton7190";
-      var name7332 = "frc7332";
-      var at = "@";
-      var site = "gmail";
-      var dot = ".";
-      var com = "com";
-      document.getElementById("7190email").innerHTML =
-        name7190 + at + site + dot + com;
-      document.getElementById("7332email").innerHTML =
-        name7332 + at + site + dot + com;
-    </script>
-    <!-- this script keeps the current year at the id "currentyear" up to date -->
-    <script>
-      document.getElementById("currentyear").innerHTML =
-        new Date().getFullYear();
-    </script>
-    <!-- links to javascript that bootstrap needs -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
+        <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
+      </div>
+    </footer>
+  </main>
+  <!-- script to piece together the email address so it can be copy-pasted. this supposedly stops bots from scraping it from the code and spamming us -->
+  <script>
+    var name7190 = "templeton7190";
+    var name7332 = "frc7332";
+    var at = "@";
+    var site = "gmail";
+    var dot = ".";
+    var com = "com";
+    document.getElementById("7190email").innerHTML =
+      name7190 + at + site + dot + com;
+    document.getElementById("7332email").innerHTML =
+      name7332 + at + site + dot + com;
+  </script>
+  <!-- this script keeps the current year at the id "currentyear" up to date -->
+  <script>
+    document.getElementById("currentyear").innerHTML =
+      new Date().getFullYear();
+  </script>
+  <!-- links to javascript that bootstrap needs -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
