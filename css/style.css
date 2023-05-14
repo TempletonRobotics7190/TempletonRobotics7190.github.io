@@ -6,7 +6,8 @@
 /* hero background image */
 .bgimage {
     height: 100vh;
-    background: url('.././images/mec chassis.JPG');
+    /* background: url('.././images/mec chassis.JPG'); */
+    background: linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url('.././images/mec chassis.JPG');
     background-size: cover;
     position: relative;
 }
