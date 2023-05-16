@@ -12,6 +12,13 @@
     position: relative;
 }
 
+.servicesText {
+    height: 200px;
+    /* adjust this value as needed */
+    overflow: auto;
+    /* add this to enable scrolling if the content overflows */
+}
+
 /* text css above hero image*/
 .hero_title {
     margin-top: 400px;

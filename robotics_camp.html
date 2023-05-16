@@ -155,7 +155,7 @@
     </section>
 
     <!-- services section-->
-    <section id="services">
+    <section id="services" style="margin-top: 50px;">
         <div class="container">
             <h1 class="text-center">Skills</h1>
             <div class="row">
@@ -190,7 +190,8 @@
                         <div class="card-body">
                             <i class='far servicesIcon fa-check-circle'></i>
                             <h4 class="card-title mt-3">Design Skills</h4>
-                            <p class="card-text mt-3">Overall, by experimenting with different coding and designing
+                            <p class="card-text mt-3">Overall, by experimenting
+                                with different coding and designing
                                 techniques, a robotics camp provides a collaborative and engaging environment for
                                 attendees to develop their design skills and bring their creative ideas to fruition.
                             </p>
@@ -201,11 +202,12 @@
     </section>
 
     <!-- register section-->
-    <section id="register">
+    <section id="register" style="margin-top: 50px;">
         <div class="container mt-3">
             <h1 class="text-center">Register</h1>
-            <br><br><br><br>
+            <br>
             <h3>Steps to Register:</h3>
+            <br>
             <h4 style="margin-left: 40px;font-weight: normal;"> 1. Click on the button below<br>2. Enter an amount of
                 $300 to donate<br>3. Include the following information in the 'Message to the School Board' area</h4>
             <h4 style="margin-left: 90px;font-weight: normal;"><br> Email,<br> Attendee's Name,<br> Attendee's
@@ -219,26 +221,29 @@
                 <br> <br> <br>
             </div>
             <br> <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/chassis.JPG" alt="Card image"
-                            style="width:100%;margin-left: auto;">
-                        <div class="card-body">
-                            <h4 class="card-title">August 14th-18th</h4>
-                            <p class="card-text">Click on this link to register for the 2023 Robotics Camp!</p>
-                            <div class="text-center">
-                                <a href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
-                                    class="btn btn-success">Register!</a>
-                            </div>
+
+        </div>
+    </section>
+
+    <div class="container" style="margin-bottom: 50px;">
+        <div class="row">
+            <div class="col-lg-4" style="margin-bottom: 50px;">
+                <div class="card">
+                    <img class="card-img-top" src="images/chassis.JPG" alt="Card image"
+                        style="width:100%;margin-left: auto;">
+                    <div class="card-body">
+                        <h4 class="card-title">August 14th-18th</h4>
+                        <p class="card-text">Click on this link to register for the 2023 Robotics Camp!</p>
+                        <div class="text-center">
+                            <a href="https://vsb.schoolcashonline.com/Fee/Details/1869/196/false/true?fundDestination=S-Templeton%20Robotics%20Club"
+                                class="btn btn-success">Register</a>
                         </div>
                     </div>
                 </div>
-
-
-                <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-                <div
-                    style="max-width:100%;list-style:none; transition: none;overflow:hidden;width: 700px;height:500px;float:right;margin-left: auto;">
+            </div>
+            <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+            <div class="col-lg-8">
+                <div style="max-width:100%;list-style:none;transition:none;overflow:hidden;height:500px;">
                     <div id="embed-ded-map-canvas" style="height:100%; width:90%;max-width:100%;">
                         <iframe style="height:100%;width:100%;border:0;" frameborder="0"
                             src="https://www.google.com/maps/embed/v1/place?q=Templeton+Secondary+School,+Templeton+Drive,+Vancouver,+BC,+Canada&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
@@ -253,32 +258,34 @@
                             max-height: 100%;
                             background: none
                         }
-
-                        ;
                     </style>
                 </div>
+            </div>
 
-                <!-- this is the footer -->
-                <footer class="container-fluid rainstorms-dark text-light py-5">
-                    <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
-                    <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
-                        <!-- links to our code on github as well as our instagram pages -->
-                        <div class="d-flex align-items-center">
-                            <a href="https://github.com/TempletonRobotics7190" target="_blank"><i
-                                    class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="Code"></i></a>
-                            <a href="https://instagram.com/templetonrobotics" target="_blank"><i
-                                    class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
-                            <a href="https://instagram.com/puddlejumper_robotics/" target="_blank"><i
-                                    class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
-                        </div>
-                        <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
-                        <p>Any Questions? Email templeton7190@gmail.com</p>
-                        <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
-                    </div>
-                </footer>
-                </main>
-                <!-- load javascript after loading all html content -->
-                <script src="js/script.js"></script>
+        </div>
+
+    </div>
+    <!-- this is the footer -->
+    <footer class="container-fluid rainstorms-dark text-light py-5">
+        <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
+        <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
+            <!-- links to our code on github as well as our instagram pages -->
+            <div class="d-flex align-items-center">
+                <a href="https://github.com/TempletonRobotics7190" target="_blank"><i
+                        class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="Code"></i></a>
+                <a href="https://instagram.com/templetonrobotics" target="_blank"><i
+                        class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
+                <a href="https://instagram.com/puddlejumper_robotics/" target="_blank"><i
+                        class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
+            </div>
+            <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
+            <p>Any Questions? Email templeton7190@gmail.com</p>
+            <p>© 2017-<span id="currentyear"></span> Templeton Robotics</p>
+        </div>
+    </footer>
+    </main>
+    <!-- load javascript after loading all html content -->
+    <script src="js/script.js"></script>
 
 </body>
 
