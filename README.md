@@ -10,4 +10,4 @@ How to make a change:
   4. Stage the change
   5. Commit, add message
   6. Push or sync
-  7. Go to https://templetonrobotics.ca/ click on page you want, if you don't see the change press shift+F5
+  7. Go to https://templeton-robotics.ca/ click on page you want, if you don't see the change press shift+F5
