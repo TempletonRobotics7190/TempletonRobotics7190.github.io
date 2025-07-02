@@ -64,7 +64,7 @@
     <nav class="navbar navbar-expand-md navbar-dark sticky-top rainstorms-dark">
         <!-- our logos (which link to the home page and the puddle jumpers section of the about page, respectively) -->
         <a class="navbar-brand" href="/"><img src="images/logo.svg" height="50" alt="7190 Logo" loading="lazy" /></a>
-        <a class="navbar-brand" href="about.html#pjoffset"><img src="images/logopj.svg" height="50" alt="7332 Logo"
+        <a class="navbar-brand" href="about.html#pjoffset"><img src="images/logopj.png" height="50" alt="7332 Logo"
                 loading="lazy" /></a>
         <!-- the sandwich (menu) button that appears when the navbarContent collapses -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
@@ -77,8 +77,11 @@
             <!-- this ul (unordered list) contains the elements of the navbar. the class "ml-auto" means that the left margin will stretch to fill automatically (effectively right-aligning this set of elements) -->
             <ul class="navbar-nav ml-auto">
                 <!-- these li (list items) make up the links in the navbar. the link with the class "active" is highlighted as the current page -->
+                <li class="nav-item text-md-left text-right">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
                 <li class="nav-item active text-md-left text-right">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="robotics_camp.html">Camp <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item text-md-left text-right">
                     <a class="nav-link" href="about.html">About</a>
@@ -126,7 +129,7 @@
                     <div class="row mt-3">
                         <div class="col-md-6">
                             <ul>
-                                <li>Ages: 8-16</li>
+                                <li>Grades: 5-7</li>
                                 <li>Location: Templeton Secondary School</li>
                                 <li>No Experience Required</li>
 
@@ -135,7 +138,7 @@
                         <div class="col-md-6">
                             <ul>
                                 <li>Hours: 8:30 am - 12:30 pm</li>
-                                <li>Week: August 12th-16th</li>
+                                <li>Week: August 11th-15th</li>
                                 <li>Cost: $250</li>
                                 <li>Lunch Provided</li>
 
@@ -143,12 +146,9 @@
                         </div>
                     </div>
                     <div class="row mt-3">
-                        <p> Our robotics camp offers a hands-on experience that guides students through the entire
-                            process of building a robot from scratch. Students will learn how to construct the chassis
-                            and wire the electronics of a robot used to compete in the FIRST Robotics Competition.
-                            Additionally, students will explore the world of programming using Python, learning how to
-                            control a robot's movements and reactions through code. By the end of the camp, students
-                            will have gained valuable skills in robotics, programming, and teamwork.
+                        <p> Our robotics camp offers a hands-on experience that guides students through the process of building a robot used in the FIRST Robotics Lego League. 
+                            The goal of the camp is to foster early interest in STEM and nurture creativity, innovation and problem-solving skills. Campers will learn the fundamentals of building and coding through making their own lego robots. They can then apply that knowledge through exciting hands-on competitions, all while gaining productive learning habits, confidence, and teamwork skills. 
+
                         </p>
                     </div>
                 </div>
@@ -165,10 +165,7 @@
                         <div class="card-body">
                             <i class="fas servicesIcon fa-clock"></i>
                             <h4 class="card-title mt-3">Engineering</h4>
-                            <p class="card-text mt-3"> Building a robot can provide attendees with invaluable experience
-                                in the field of engineering. Attendees will gain hands-on experience in building and
-                                troubleshooting a robot, while also developing problem-solving skills and critical
-                                thinking abilities.
+                            <p class="card-text mt-3"> Building a robot can provide attendees with invaluable experience in the field of engineering. Attendees will gain hands-on experience in building and troubleshooting a robot, while also developing problem-solving skills and critical thinking abilities.
                             </p>
                         </div>
                     </div>
@@ -177,10 +174,8 @@
                     <div class="card servicesText">
                         <div class="card-body">
                             <i class='fas servicesIcon fa-layer-group'></i>
-                            <h4 class="card-title mt-3">Wiring</h4>
-                            <p class="card-text mt-3">Our program helps attendees understand the key components of
-                                robots, including mechanical and electronic elements, and how they work together to
-                                create a functioning robot.
+                            <h4 class="card-title mt-3">Teamwork</h4>
+                            <p class="card-text mt-3">Each robot will be designed, built, and programmed by small groups of two to three campers. They will develop their ability to communicate ideas, divide tasks, and learn from their peers.
                             </p>
                         </div>
                     </div>
@@ -191,10 +186,7 @@
                         <div class="card-body">
                             <i class='far servicesIcon fa-check-circle'></i>
                             <h4 class="card-title mt-3">Design Skills</h4>
-                            <p class="card-text mt-3">Overall, by experimenting
-                                with different coding and designing
-                                techniques, a robotics camp provides a collaborative and engaging environment for
-                                attendees to develop their design skills and bring their creative ideas to fruition.
+                            <p class="card-text mt-3">By experimenting with different codes and design techniques, campers will be able to develop their design skills and turn their creative ideas into functioning robots. 
                             </p>
                         </div>
                     </div>
@@ -285,14 +277,16 @@
     <footer class="container-fluid rainstorms-dark text-light py-5">
         <!-- this section is set up to default to left-orientation but center itself on small screens (as defined by the breakpoint "sm") -->
         <div class="container text-center text-sm-left d-flex flex-column align-items-center d-sm-block">
-            <!-- links to our code on github as well as our instagram pages -->
+            <!-- links to our githubs, instagrams, 7332 facebook and tiktok -->
             <div class="d-flex align-items-center">
-                <a href="https://github.com/TempletonRobotics7190" target="_blank"><i
-                        class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="Code"></i></a>
-                <a href="https://instagram.com/templetonrobotics" target="_blank"><i
-                        class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190"></i></a>
-                <a href="https://instagram.com/puddlejumper_robotics/" target="_blank"><i
-                        class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332"></i></a>
+                <a href="https://github.com/TempletonRobotics7190" target="_blank"><i class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="7190Code"></i></a>
+                <a href="https://github.com/PuddleJumpers" target="_blank"><i class="fab fa-github fa-2x rainstorms-icon-light mx-1 my-3" title="7332Code"></i></a>
+                <a href="https://www.instagram.com/7190rainstorms/" target="_blank"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7190Insta"></i></a>
+                <a href="https://www.instagram.com/puddlejumper7332/" target="_blank"><i class="fab fa-instagram fa-2x rainstorms-icon-light mx-1 my-3" title="7332Insta"></i></a>
+                <a href="https://www.tiktok.com/@puddlejumpers7332" target="_blank"><i class="fab fa-tiktok fa-2x rainstorms-icon-light mx-1 my-3" title="7332TikTok"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100087412628649" target="_blank"><i class="fab fa-facebook fa-2x rainstorms-icon-light mx-1 my-3" title="7332Facebook"></i></a>
+                <a href="https://www.linkedin.com/in/puddle-jumpers-8bb582255/" target="_blank"><i class="fab fa-linkedin fa-2x rainstorms-icon-light mx-1 my-3" title="7332LinkedIn"></i></a>
+                <a href="https://x.com/PuddleJP" target="_blank"><i class="fab fa-twitter fa-2x rainstorms-icon-light mx-1 my-3" title="7332X"></i></a>
             </div>
             <!-- the span with the id "currentyear" is targetted by a bit of javascript below to keep the current year... current -->
             <p>Any Questions? Email templeton7190@gmail.com</p>
