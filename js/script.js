@@ -21,4 +21,3 @@ navLinks.forEach((l) => {
 function copyDonationMessage() {
     const text = 'Donation to Templeton Robotics Club';
     navigator.clipboard.writeText(text);
-}
