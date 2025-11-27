@@ -167,3 +167,9 @@ div#map embed {
 h7 {
   font-size: 50px;
 }
+
+.sponsor-logo-medium {
+  max-height: 120px;
+  max-width: 100%;
+  width: auto;
+}
