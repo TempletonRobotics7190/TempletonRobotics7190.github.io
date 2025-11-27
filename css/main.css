@@ -167,3 +167,27 @@ div#map embed {
 h7 {
   font-size: 50px;
 }
+
+.sponsor-logo {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  max-height: clamp(90px, 12vw, 180px);
+}
+
+.sponsor-logo-hero {
+  max-height: clamp(160px, 22vw, 260px);
+}
+
+.sponsor-logo-large {
+  max-height: clamp(140px, 18vw, 220px);
+}
+
+.sponsor-logo-medium {
+  max-height: clamp(110px, 14vw, 180px);
+}
+
+.sponsor-logo-small {
+  max-height: clamp(90px, 12vw, 150px);
+}
