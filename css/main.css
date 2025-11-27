@@ -173,3 +173,9 @@ h7 {
   max-width: 100%;
   width: auto;
 }
+
+.sponsor-logo-large {
+  max-height: 160px;
+  max-width: 100%;
+  width: auto;
+}
